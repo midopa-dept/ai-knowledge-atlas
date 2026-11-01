@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="345" viewBox="0 0 920 345">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="NanumGothic, sans-serif" fill="#172b40" font-size="19">
+<text x="460" y="27" font-size="21" fill="#172b40" text-anchor="middle">Causal Local + 중계3: 자기5쌍 + 아래6쌍 = 11쌍</text>
+<path d="M 102 140 C 115 81, 250 81, 263 140" fill="none" stroke="#2463a6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 102 140 C 115 57, 435 57, 448 140" fill="none" stroke="#b94f1b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 287 140 C 300 81, 435 81, 448 140" fill="none" stroke="#b94f1b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 472 140 C 485 81, 620 81, 633 140" fill="none" stroke="#b94f1b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 472 140 C 485 57, 805 57, 818 140" fill="none" stroke="#b94f1b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 657 140 C 670 81, 805 81, 818 140" fill="none" stroke="#2463a6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="90" cy="150" r="18" fill="white" stroke="#2463a6" stroke-width="2"/>
+<text x="90" y="156" font-size="17" fill="#172b40" text-anchor="middle">1</text>
+<circle cx="275" cy="150" r="18" fill="white" stroke="#2463a6" stroke-width="2"/>
+<text x="275" y="156" font-size="17" fill="#172b40" text-anchor="middle">2</text>
+<circle cx="460" cy="150" r="18" fill="white" stroke="#b94f1b" stroke-width="2"/>
+<text x="460" y="156" font-size="17" fill="#172b40" text-anchor="middle">3</text>
+<circle cx="645" cy="150" r="18" fill="white" stroke="#2463a6" stroke-width="2"/>
+<text x="645" y="156" font-size="17" fill="#172b40" text-anchor="middle">4</text>
+<circle cx="830" cy="150" r="18" fill="white" stroke="#2463a6" stroke-width="2"/>
+<text x="830" y="156" font-size="17" fill="#172b40" text-anchor="middle">5</text>
+<text x="460" y="194" font-size="17" fill="#172b40" text-anchor="middle">자기 Edge는 모두 포함. 중계3은 제공1·2·3만 읽는다.</text>
+<rect x="65" y="235" width="210" height="67" rx="10" fill="#eaf2fb" stroke="#2463a6" stroke-width="2"/>
+<text x="170.0" y="265" font-size="19" fill="#172b40" text-anchor="middle">초기 위치1</text>
+<rect x="355" y="235" width="210" height="67" rx="10" fill="#eaf2fb" stroke="#2463a6" stroke-width="2"/>
+<text x="460.0" y="265" font-size="19" fill="#172b40" text-anchor="middle">1층 위치3</text>
+<rect x="645" y="235" width="210" height="67" rx="10" fill="#eaf2fb" stroke="#2463a6" stroke-width="2"/>
+<text x="750.0" y="265" font-size="19" fill="#172b40" text-anchor="middle">2층 위치5</text>
+<path d="M275,268 L355,268" fill="none" stroke="#b94f1b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M565,268 L645,268" fill="none" stroke="#b94f1b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="460" y="331" font-size="17" fill="#172b40" text-anchor="middle">초기1의 정보는 중계를 거쳐 두 층에 도달할 수 있다.</text>
+</g></svg>

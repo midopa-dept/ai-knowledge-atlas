@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
+<defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7" fill="#445566"/></marker></defs>
+<rect width="900" height="450" fill="white"/>
+<text x="450" y="33" font-family="NanumGothic" font-size="22" text-anchor="middle" fill="#152738">선택한 토큰과 처리한 위치를 구별하기</text>
+<rect x="25" y="80" width="245" height="105" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="147.5" y="109" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">Prefill: [0,1]</text>
+<text x="147.5" y="134" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">층1/2 각각 K/V</text>
+<text x="147.5" y="159" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">1×2Head×2위치×4</text>
+<rect x="335" y="80" width="235" height="105" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="452.5" y="109" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">마지막 Logit → 선택2</text>
+<text x="452.5" y="134" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">Cache는 아직 위치0·1</text>
+<text x="452.5" y="159" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">새 위치2는 처리 전</text>
+<rect x="640" y="80" width="235" height="105" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="757.5" y="109" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">입력2 + Position[2]</text>
+<text x="757.5" y="134" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">새 Q/K/V 계산</text>
+<text x="757.5" y="159" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">과거에 새 위치 Append</text>
+<rect x="335" y="255" width="235" height="85" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="452.5" y="284" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">첫 블록의 새 반환</text>
+<text x="452.5" y="309" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">둘째 레이어의 입력</text>
+<rect x="640" y="255" width="235" height="85" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="757.5" y="284" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">둘째 레이어 새 K/V</text>
+<text x="757.5" y="309" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">Logit → 다음 선택3</text>
+<path d="M270,130 L335,130" stroke="#445566" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M570,130 L640,130" stroke="#445566" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M750,185 L452,255" stroke="#445566" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M570,300 L640,300" stroke="#445566" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="450" y="398" font-family="NanumGothic" font-size="17" text-anchor="middle" fill="#152738">둘째 레이어는 첫 레이어 K/V를 복사하지 않음</text>
+<text x="450" y="423" font-family="NanumGothic" font-size="17" text-anchor="middle" fill="#152738">Full/Incremental은 같은 Token·원위치·모델·Causal 조건에서 비교</text>
+</svg>

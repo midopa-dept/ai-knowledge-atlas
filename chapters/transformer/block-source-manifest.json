@@ -1,0 +1,10 @@
+{
+  "revision": "block-source-v0.1",
+  "sha256": {
+    "learning-source/block.py": "16303fb4c0dfdb6f334718ff6c7c974eb8d513f075668406c48082225bd091f6",
+    "learning-source/demo_block.py": "ecb77a0d330ea4cc75a3ca602e0c90f831bde6bdafdd4322701e42c7acc96b6e",
+    "learning-source/reference_block.py": "3a2d0c1e391dbfbc75fdf9a6c96d6911a5123cdbbd6e635d355b4010db90c781",
+    "learning-source/solution_block.py": "71469ec9382c6881a06c05cad338aea8ebcb0505dc00692f7e497ed64e2b6346",
+    "learning-source/verify_block.py": "b9a231d572a0a66370df131a5c9d0f0dfe32ae9043f6bbe5e94966201f3e2b8a"
+  }
+}

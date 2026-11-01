@@ -1,0 +1,28 @@
+{
+  "revision": "efficient-source-v0.1",
+  "sha256": {
+    "learning-source/efficient.py": "25abe65b6e81187f91f90ce01c16d28ee5466641467acfc5a33f7f207c59eed7",
+    "learning-source/reference_efficient.py": "9fcd81ac1f52b0b45b86a34bb4554b185ac60ed3e9043464b3d165c04e0bea44",
+    "learning-source/demo_efficient.py": "7c74183a06e0999a983cbe5da3893beae57e3b313e8443b83c884ae042eae411",
+    "learning-source/solution_efficient.py": "8a97793d91520d7eac00bfb508c0d22fd671ce7023f32de8d6f454be7feede56",
+    "learning-source/verify_efficient.py": "a16f45779ce6a4b61782893efd273961d5a11deb4cbde0735e8047437576f83b"
+  },
+  "인쇄범위": [
+    [
+      "learning-source/efficient.py",
+      142,
+      148
+    ],
+    [
+      "learning-source/efficient.py",
+      151,
+      166
+    ],
+    [
+      "learning-source/solution_efficient.py",
+      1,
+      16
+    ]
+  ],
+  "계약": "입력 투영/특징 생성 제외, 좌표별 비음수 특징 계약, 가중치 양의 분모, 현재 입력 포함 Prefix, Query 자기 생성원 포함 도달성"
+}

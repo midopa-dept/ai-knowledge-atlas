@@ -1,0 +1,9 @@
+{
+  "revision": "scoring-source-v0.1",
+  "sha256": {
+    "learning-source/demo_scoring.py": "b2131dcd2cf5e3cea3bf7e96e8c3423eb90a1d63ebad71d5724f87eaf4a6649d",
+    "learning-source/scoring.py": "5ca57c53db136670f5b8ed1e0cf592de283b29bd59fa57464076574230e41ef3",
+    "learning-source/solution_scoring.py": "439816cd392711bb64250aeac750e48dafd071e99b0bb4e034044f5809524323",
+    "learning-source/verify_scoring.py": "507ea155ae1bfca67ad302abb3860183685e301017bc56ca1ac0fec549fca590"
+  }
+}

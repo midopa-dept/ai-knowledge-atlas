@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
+<defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7" fill="#445566"/></marker></defs>
+<rect width="900" height="450" fill="white"/>
+<text x="450" y="33" font-family="NanumGothic" font-size="22" text-anchor="middle" fill="#152738">완성 조건과 출력 Prefix가 만나는 계산</text>
+<rect x="20" y="80" width="200" height="80" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="120.0" y="109" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">조건 ID [0,1,2]</text>
+<text x="120.0" y="134" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">Embedding + Position</text>
+<rect x="310" y="80" width="210" height="80" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="415.0" y="109" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">양방향 Self Block</text>
+<text x="415.0" y="134" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">Encoder E: 3×3</text>
+<rect x="20" y="240" width="200" height="80" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="120.0" y="269" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">출력 ID [BOS,A]</text>
+<text x="120.0" y="294" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">Embedding + Position</text>
+<rect x="310" y="240" width="210" height="80" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="415.0" y="269" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">Causal Self + 합/LN</text>
+<text x="415.0" y="294" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">요청 H: 2×3</text>
+<rect x="650" y="220" width="220" height="100" rx="8" fill="#eff6ff" stroke="#7499ba" stroke-width="2"/>
+<text x="760.0" y="249" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">Cross + 합/LN + FFN</text>
+<text x="760.0" y="274" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">최종 Y: 2×3</text>
+<text x="760.0" y="299" font-family="NanumGothic" font-size="18" text-anchor="middle" fill="#152738">Logit: 2×3 → 선택</text>
+<path d="M220,120 L310,120" stroke="#445566" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M220,280 L310,280" stroke="#445566" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M520,280 L650,280" stroke="#445566" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="585.0" y="272.0" font-family="NanumGothic" font-size="16" text-anchor="middle" fill="#152738">Q</text>
+<path d="M520,120 L730,220" stroke="#445566" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="625.0" y="162.0" font-family="NanumGothic" font-size="16" text-anchor="middle" fill="#152738">E에서 K/V</text>
+<text x="450" y="398" font-family="NanumGothic" font-size="17" text-anchor="middle" fill="#152738">Self의 Q/K/V는 같은 집합, Cross의 Q와 K/V는 다른 집합</text>
+<text x="450" y="423" font-family="NanumGothic" font-size="17" text-anchor="middle" fill="#152738">조건의 뒤쪽은 이미 제공됨 / 출력의 미래는 금지됨</text>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "revision": "heads-source-v0.1",
+  "sha256": {
+    "learning-source/heads.py": "ba01f4c23d20edc862394c04d40035de9f2b4ef02da55ea0383d019859000059",
+    "learning-source/demo_heads.py": "2db06be37d4decbce71d2fdbdea8606f1dbc9aa236ef5fc38382918a3c158de8",
+    "learning-source/verify_heads.py": "9411418bc42f26024838365afeeefd10b96a48d584dd7767619bf1448f10ca0c",
+    "learning-source/solution_heads.py": "3ea82d790be576e04b4433bb4df4f2c354fbd28fc33f440afda744e90e5aff32"
+  }
+}

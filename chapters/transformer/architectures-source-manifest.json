@@ -1,0 +1,28 @@
+{
+  "revision": "architectures-source-v0.1",
+  "sha256": {
+    "learning-source/architectures.py": "fe545a4018f2197060e16a3561b4f3bbab5f522bda285034a5098607ebf8e05c",
+    "learning-source/demo_architectures.py": "2e969a481477c84558a81fd8def23431bbed1312ca0cfc86767885dbf06fe38b",
+    "learning-source/reference_architectures.py": "e746396c29ac2e8179c50b706a2915af5ecc7e26efd551edd399a8853bc33a0f",
+    "learning-source/solution_architectures.py": "744b853d9f469fbbf58a12bab72767a56ffb7612b53846e6c3378f795239b668",
+    "learning-source/verify_architectures.py": "482af5c98a374c01c95dfd707e71df23f96382f21d3bfde96a545695ad8c4d52"
+  },
+  "기존소스": "masking/sources/heads/block 및 reference_block를 원래 revision에서 재사용. 기존 파일은 변경하지 않음.",
+  "인쇄범위": [
+    [
+      "learning-source/architectures.py",
+      55,
+      81
+    ],
+    [
+      "learning-source/architectures.py",
+      1,
+      91
+    ],
+    [
+      "learning-source/solution_architectures.py",
+      1,
+      26
+    ]
+  ]
+}

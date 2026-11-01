@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="320" viewBox="0 0 920 320">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="NanumGothic, sans-serif" fill="#172b40" font-size="19">
+<rect x="30" y="40" width="240" height="92" rx="10" fill="#eaf2fb" stroke="#2463a6" stroke-width="2"/>
+<text x="150.0" y="70" font-size="19" fill="#172b40" text-anchor="middle">이전 상태 S_(i-1), z_(i-1)</text>
+<text x="150.0" y="98" font-size="19" fill="#172b40" text-anchor="middle">현재까지 읽은 이전 항들</text>
+<rect x="365" y="40" width="250" height="92" rx="10" fill="#eaf2fb" stroke="#2463a6" stroke-width="2"/>
+<text x="490.0" y="70" font-size="19" fill="#172b40" text-anchor="middle">현재 Key 특징 / Value</text>
+<text x="490.0" y="98" font-size="19" fill="#172b40" text-anchor="middle">외적 r×d_v / 특징 r</text>
+<rect x="300" y="175" width="320" height="95" rx="10" fill="#eaf2fb" stroke="#2463a6" stroke-width="2"/>
+<text x="460.0" y="205" font-size="19" fill="#172b40" text-anchor="middle">S_i, z_i에 현재 항 추가</text>
+<text x="460.0" y="233" font-size="19" fill="#172b40" text-anchor="middle">제공 범위는1…i</text>
+<path d="M150,132 L335,175" fill="none" stroke="#2463a6" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M490,132 L490,175" fill="none" stroke="#2463a6" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="710" y="175" width="180" height="95" rx="10" fill="#eaf2fb" stroke="#2463a6" stroke-width="2"/>
+<text x="800.0" y="205" font-size="19" fill="#172b40" text-anchor="middle">현재 Query 특징</text>
+<text x="800.0" y="233" font-size="19" fill="#172b40" text-anchor="middle">출력 o_i</text>
+<path d="M620,215 L710,215" fill="none" stroke="#2463a6" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="800" y="143" font-size="16" fill="#172b40" text-anchor="middle">현재 입력에서 생성</text>
+<text x="460" y="304" font-size="19" fill="#b94f1b" text-anchor="middle">갱신 → 현재 요청 적용 → 다음 시점에 상태 전달</text>
+</g></svg>

@@ -1,0 +1,437 @@
+{"term_key":"agent.action","english":"action","preferred_ko":"행동","display_policy":"ko_en_first","context_note":"에이전트의 환경 작용에 한정한다. 목표로 주어진 task나 규범적 behavior 전체와 문맥으로 구별한다."}
+{"term_key":"agent.behavior_constraint","english":"constraint","preferred_ko":"제약","display_policy":"ko_en_first","context_note":"허용 행동이나 실행을 제한하는 조건에 적용한다. requirement 전체를 제약으로 자동 치환하지 않는다."}
+{"term_key":"agent.environment_state","english":"state","preferred_ko":"환경 상태","display_policy":"ko_en_first","context_note":"환경의 상태를 지칭할 때 한정한다. 실행 상태 기록 및 현재 관측과 합치지 않는다."}
+{"term_key":"agent.environmental_feedback","english":"feedback","preferred_ko":"환경 피드백","display_policy":"ko_en_first","context_note":"환경에서 돌아오는 정보 문맥이다. 인간 선호 학습 데이터로 자동 해석하지 않는다."}
+{"term_key":"agent.execution_trajectory","english":"agent execution trajectory","preferred_ko":"에이전트 실행 궤적","display_policy":"ko_en_first","context_note":"활동과 결과의 시퀀스를 가리키며, 이를 기술한 실행 추적 기록 자체와 구별한다."}
+{"term_key":"agent.loop_termination","english":"termination","preferred_ko":"종료","display_policy":"ko_en_first","context_note":"에이전트 실행 종료 문맥에 한정한다. 작업 성공 및 정형 절차의 종료 보장을 함축하지 않는다."}
+{"term_key":"agent.memory","english":"memory","preferred_ko":"에이전트 메모리","display_policy":"ko_en_first","context_note":"에이전트·모델의 정보 보존 문맥에 적용한다. 실행 상태의 권한이나 모델 컨텍스트 노출을 보장하지 않는다."}
+{"term_key":"agent.observation","english":"observation","preferred_ko":"관측","display_policy":"ko_en_first","context_note":"관측 결과 문맥에 적용한다. 센싱 절차, 환경 상태 자체 또는 정본 실행 기록의 동의어가 아니다."}
+{"term_key":"agent.sensing","english":"environment sensing","preferred_ko":"환경 센싱","display_policy":"ko_en_first"}
+{"term_key":"agent.task_agent","english":"task-directed agent","preferred_ko":"에이전트","display_policy":"ko_en_first"}
+{"term_key":"agent.task_objective","english":"objective","preferred_ko":"작업 목표","display_policy":"ko_en_first","context_note":"작업 수행의 목적을 가리킬 때 적용한다. 최적화 목적함수 및 Learning Objective와 구별한다."}
+{"term_key":"agent.tool_call","english":"tool call","preferred_ko":"도구 호출","display_policy":"ko_en_first","context_note":"호출 요청과 실제 성공한 효과를 구별한다. Tool Invocation Contracts Concept의 표기를 대신하지 않는다."}
+{"term_key":"ai.array_tensor","english":"numerical array tensor","preferred_ko":"배열 텐서","display_policy":"ko_en_first","context_note":"AI 계산의 다축 수치 배열을 뜻하며 좌표 독립 multilinear 객체인 수학적 텐서와 구별한다. 원소 수의 일치만으로 배열 형상의 호환성을 판단하지 않는다."}
+{"term_key":"ai.computation_graph","english":"computation graph","preferred_ko":"계산 그래프","display_policy":"ko_en_first","context_note":"계산 연산·값과 실행 의존 관계의 그래프에 적용하며 지식 Semantic Graph와 구별한다. 신경망 계산 그래프의 기존 exact authority가 적용되는 문맥에서는 그 표기를 우선한다."}
+{"term_key":"algebra.equation","english":"equation","preferred_ko":"방정식","display_policy":"ko_en_first","context_note":"미지수의 허용 값을 구하는 등식에 적용한다. 모든 허용 값에서 성립하는 항등식과 구별하며 실제 실수 정의역 및 식 유형 제한을 유지한다."}
+{"term_key":"algebra.polynomial_expression","english":"polynomial expression","preferred_ko":"다항식","display_policy":"ko_en_first"}
+{"term_key":"algebra.rational_expression","english":"rational expression","preferred_ko":"유리식","display_policy":"ko_en_first"}
+{"term_key":"algebra.scalar_field","english":"scalar field (algebra)","preferred_ko":"스칼라체","display_policy":"ko_en_first","context_note":"선형대수의 계수 스칼라를 이루는 체에 적용한다. 실수체·복소수체 또는 주어진 체의 제한을 유지하며 고유벡터나 대각화의 존재를 표기만으로 보장하지 않는다. 공간상의 스칼라장 및 데이터 field와 구별한다."}
+{"term_key":"algebra.solution_set","english":"solution set","preferred_ko":"해집합","display_policy":"ko_en_first","context_note":"원래 방정식·부등식을 만족하는 모든 허용 해의 집합에 적용한다. 검증 전 후보값 목록이나 단일 해와 구별하며 실제 정의역을 유지한다."}
+{"term_key":"analysis.absolute_convergence","english":"absolute convergence","preferred_ko":"절대수렴","display_policy":"ko_en_first","context_note":"실수 급수의 각 항의 절댓값으로 만든 급수가 유한한 합으로 수렴하는 절대수렴이다. 원래 급수의 수렴이나 개별 항의 절댓값과 구별한다."}
+{"term_key":"analysis.antiderivative","english":"antiderivative","preferred_ko":"원시함수","display_policy":"ko_en_first","context_note":"명시된 구간의 필요한 내부에서 도함수가 적분 대상 함수와 같은 원시함수다. 정적분의 값이나 수치 근사 결과와 구별하고 끝점 조건을 보존한다."}
+{"term_key":"analysis.conditional_convergence","english":"conditional convergence","preferred_ko":"조건수렴","display_policy":"ko_en_first","context_note":"실수 급수는 수렴하지만 그 절댓값 급수는 수렴하지 않는 조건수렴이다. 조건부 확률과 구별하며 임의 재배열 후 같은 합을 보장하지 않는다."}
+{"term_key":"analysis.convergence","english":"convergence","preferred_ko":"수렴","display_policy":"ko_en_first","context_note":"명시된 공간에서 수열의 항들이 극한의 모든 근방에 충분히 뒤부터 속하는 수렴이다. 거리·노름·위상과 공간 내부 여부를 보존하며 균등수렴·확률적 수렴·최적화 성공을 자동 부여하지 않는다."}
+{"term_key":"analysis.derivative","english":"derivative","preferred_ko":"도함수","display_policy":"ko_en_first","context_note":"정확한 스칼라 변화율 또는 전체 일차 선형 도함수를 뜻한다. 미분가능성은 필요한 점·변수에서 그 도함수의 존재이며 부분도함수의 존재만으로 전체 미분가능성을 추론하지 않는다. 수치 근사와 반복 미분의 차수를 구별한다."}
+{"term_key":"analysis.difference_quotient","english":"difference quotient","preferred_ko":"차분몫","display_policy":"ko_en_first","context_note":"0이 아닌 h에 대한 (f(x+h)−f(x))/h라는 차분몫이다. 접근 방향을 보존하며 극한 전 값을 도함수 또는 수치미분 알고리즘 전체와 동일시하지 않는다."}
+{"term_key":"analysis.function_periodicity","english":"period / periodicity","preferred_ko":"주기","display_policy":"ko_en_first","context_note":"함수값을 보존하는 명시된 양의 이동량을 주기로 뜻한다. 최소 양의 주기를 자동 추론하지 않으며 일반 적분가능 함수나 마르코프 비주기성에 적용하지 않는다."}
+{"term_key":"analysis.infinite_series","english":"infinite series","preferred_ko":"무한급수","display_policy":"ko_en_first","context_note":"유한 초기 부분합의 극한으로 합을 정하는 무한급수다. 유한합·합산 없는 수열·푸리에 복원 정리와 구별하며 수렴하지 않는 경우에 합을 단정하지 않는다."}
+{"term_key":"analysis.inner_product","english":"inner product","preferred_ko":"내적","display_policy":"ko_en_first","context_note":"실수·복소수의 내적에 적용하며 주어진 인자 선형성·켤레 규약을 유지한다. 임의 쌍선형 형식이나 주어지지 않은 좌표 dot product를 내적으로 가정하지 않는다. 완비성은 별도 조건이다."}
+{"term_key":"analysis.integrability","english":"integrability","preferred_ko":"적분가능성","display_policy":"ko_en_first","context_note":"명시된 적분 체계·영역·측도에서 필요한 적분의 존재·유한성을 뜻한다. 절댓값·제곱·국소 시간 및 확률 적분 조건을 따로 유지하며 점별 유한성이나 조건부 상쇄로 이를 대신하지 않는다."}
+{"term_key":"analysis.limit","english":"limit","preferred_ko":"극한값","display_policy":"ko_en_first","context_note":"명시된 오차·거리 제어로 접근하는 유한 극한값을 뜻한다. 수열의 첨자와 함수 입력의 접근(좌·우·양쪽·양·음의 무한대)을 구별하고 점별 조건을 보존한다. 입력이 무한대로 가는 것과 함수값의 무한대로의 발산은 다르며 무한 목적지·최댓값·추정량을 이 값 entry로 승인하지 않는다."}
+{"term_key":"analysis.linear_functional","english":"linear functional","preferred_ko":"선형범함수","display_policy":"ko_en_first","context_note":"스칼라값을 내는 선형범함수다. 연속성·주어진 노름·쌍대쌍 조건을 따로 명시하며 모든 선형범함수가 연속이라고 추론하지 않는다."}
+{"term_key":"analysis.map_continuity","english":"continuity","preferred_ko":"연속성","display_policy":"ko_en_first","context_note":"명시된 정의역·공역 구조에서 점별 근방 또는 오차 제어를 보존하는 함수의 연속성이다. 전체 정의역에서는 각 점 조건을 뜻하며 균등연속·미분가능성·측도의 절대연속이나 실행 지속성과 구별한다."}
+{"term_key":"analysis.monotonicity","english":"monotonicity","preferred_ko":"단조성","display_policy":"ko_en_first","context_note":"순서 있는 입력이나 첨자가 증가할 때 값이 감소하지 않거나 증가하지 않는 단조성이다. 엄격한 증가·감소와 최적화 진전을 자동 추론하지 않는다."}
+{"term_key":"analysis.normed_space","english":"normed space","preferred_ko":"노름공간","display_policy":"ko_en_first","context_note":"명시된 노름을 갖춘 벡터공간이다. 노름공간이라는 말만으로 바나흐 완비성이나 힐베르트 내적 구조를 추론하지 않는다."}
+{"term_key":"analysis.operator_norm","english":"operator norm","preferred_ko":"연산자 노름","display_policy":"ko_en_first","context_note":"선형사상의 유계성은 연산자 노름의 유한성으로 구별한다. 개별 벡터의 노름과 혼동하지 않으며, 범함수의 쌍대 노름에는 연속성 조건을 보존한다."}
+{"term_key":"analysis.partial_sum","english":"partial sum","preferred_ko":"부분합","display_policy":"ko_en_first"}
+{"term_key":"analysis.pointwise_convergence","english":"pointwise convergence","preferred_ko":"점별수렴","display_policy":"ko_en_first","context_note":"각 고정 입력에서의 수렴이다. 오차를 통제하는 첨자는 입력에 따라 달라도 되며, 균등수렴이나 연산자 노름 수렴과 구별한다."}
+{"term_key":"analysis.riemann_integral","english":"Riemann integral","preferred_ko":"리만 적분","display_policy":"ko_en_first"}
+{"term_key":"analysis.subsequence","english":"subsequence","preferred_ko":"부분수열","display_policy":"ko_en_first"}
+{"term_key":"analysis.uniform_convergence","english":"uniform convergence","preferred_ko":"균등수렴","display_policy":"ko_en_first","context_note":"하나의 첨자로 정의역 전체의 오차를 통제한다. 점별수렴·균등연속성과 구별하며, 적분·미분과 극한의 순서 교환에는 별도 가정을 확인한다."}
+{"term_key":"attention.key","english":"attention key","preferred_ko":"키 벡터","display_policy":"ko_en_first","context_note":"어텐션에서 질의와 비교되는 source-side 키 벡터에 적용한다. 질의·집계되는 값 벡터 및 사전·보안의 key와 구별한다."}
+{"term_key":"attention.query","english":"attention query","preferred_ko":"어텐션 질의","display_policy":"ko_en_first","context_note":"어텐션의 receiving-side 피연산자에 적용하며 검색 요청·형식 논리 질의와 구별한다. 벡터가 명시된 어텐션 문맥에서는 어텐션 질의 벡터 또는 질의 벡터로 조합한다."}
+{"term_key":"attention.value","english":"attention value","preferred_ko":"값 벡터","display_policy":"ko_en_first","context_note":"어텐션 가중치로 집계되는 source-information 값 벡터에 적용한다. matching용 질의·키 및 강화학습의 가치와 구별한다."}
+{"term_key":"calculus.definite_integral","english":"definite integral","preferred_ko":"정적분","display_policy":"ko_en_first","context_note":"명시된 고정 영역에서의 부호 있는 스칼라 정적분이다. 원시함수·곡선 순환·곡면 유량 및 검토하지 않은 측도 적분으로 범위를 확대하지 않는다."}
+{"term_key":"calculus.iterated_integral","english":"iterated integral","preferred_ko":"중복적분의 반복 적분 표현","display_policy":"ko_en_first","context_note":"다변수 영역을 한 번 덮도록 설정한 중첩 단일변수 적분 표현이다. 적분 순서를 바꾸면 경계도 조정하며 반복 계산이나 부분적분과 구별한다."}
+{"term_key":"calculus.line_integral","english":"line integral","preferred_ko":"선적분","display_policy":"ko_en_first","context_note":"곡선에서의 스칼라 호길이 적분 또는 벡터 접선 적분이다. 진행 방향 반전은 스칼라 호길이 적분을 보존하고 벡터 접선 적분의 부호를 바꾸므로 두 경우를 구별한다."}
+{"term_key":"calculus.surface_integral","english":"surface integral","preferred_ko":"면적분","display_policy":"ko_en_first","context_note":"곡면에서의 스칼라 면적 적분 또는 벡터 법선 유량 적분이다. 법선 방향은 벡터 유량에 적용하며 스칼라 면적 누적에 임의 부과하지 않는다."}
+{"term_key":"causal.confounding","english":"confounding","preferred_ko":"교란","display_policy":"ko_en_first","context_note":"임의의 소음이나 구성요소 상호작용을 모두 교란으로 부르지 않는다. 그래프 조정의 충분성은 비그래프적 비교에 자동 확장하지 않는다."}
+{"term_key":"causal.covariate_adjustment","english":"covariate adjustment","preferred_ko":"공변량 조정","display_policy":"ko_en_first"}
+{"term_key":"causal.exogenous_variable","english":"exogenous variable","preferred_ko":"외생 변수","display_policy":"ko_en_first"}
+{"term_key":"causal.graph","english":"causal graph","preferred_ko":"인과 그래프","display_policy":"ko_en_first","context_note":"관측적 그래프 구조만으로 인과 의미를 부여하지 않는다. 그래프만을 전체 구조적 인과 모델과 동일시하지 않는다."}
+{"term_key":"causal.intervention","english":"causal intervention","preferred_ko":"인과 개입","display_policy":"ko_en_first","context_note":"관측값에 따른 확률 조건화와 구별한다. 개입은 지정한 생성 메커니즘을 대체한다."}
+{"term_key":"causal.structural_mechanism","english":"structural causal mechanism","preferred_ko":"구조적 인과 메커니즘","display_policy":"ko_en_first"}
+{"term_key":"causal.treatment","english":"treatment variable","preferred_ko":"처치 변수","display_policy":"ko_en_first"}
+{"term_key":"causality.causal_effect","english":"causal effect","preferred_ko":"인과 효과","display_policy":"ko_en_first","context_note":"처치 변수에 대한 효과에는 처치 한정어를 붙여 인과 효과 표기를 사용한다. 관측적 연관이나 회귀계수를 이 효과와 동일시하지 않는다."}
+{"term_key":"coding.unique_decodability","english":"unique decodability","preferred_ko":"유일 복호 가능성","display_policy":"ko_en_first"}
+{"term_key":"cognition.perceptual_grounding","english":"perceptual grounding","display_policy":"english","context_note":"표상과 지각 정보의 연결을 지칭하는 sense다. symbol grounding의 한국어 preferred form을 자동 확장하지 않으며 evidence grounding 또는 Learning Objective grounding과 구별한다."}
+{"term_key":"cognition.symbol_grounding","english":"symbol grounding","preferred_ko":"기호 접지","display_policy":"ko_en_first","context_note":"기호 또는 표상을 비기호적·지각적·세계적 참조와 연결하는 AI/인지과학 sense다. evidence grounding, Learning Objective의 Concept grounding과 구별한다. 국내 문헌의 '기호정초'는 경쟁 용례로 인정하되 avoid 표기로 지정하지 않는다."}
+{"term_key":"complex.modulus","english":"complex-number modulus","preferred_ko":"복소수의 절댓값","display_policy":"ko_en_first"}
+{"term_key":"computation.decider","english":"decider","preferred_ko":"판정기","display_policy":"ko_en_first"}
+{"term_key":"computation.decision_problem","english":"decision problem","preferred_ko":"판정 문제","display_policy":"ko_en_first"}
+{"term_key":"computation.problem_reduction","english":"decision-problem reduction","preferred_ko":"문제 환원","display_policy":"ko_en_first"}
+{"term_key":"control.closed_loop","english":"closed loop","preferred_ko":"폐루프","display_policy":"ko_en_first"}
+{"term_key":"control.dynamical_model","english":"dynamical model","preferred_ko":"동역학 모형","display_policy":"ko_en_first"}
+{"term_key":"control.feedback_controller","english":"feedback controller","preferred_ko":"피드백 제어기","display_policy":"ko_en_first"}
+{"term_key":"control.feedback_gain","english":"feedback gain","preferred_ko":"피드백 이득","display_policy":"ko_en_first"}
+{"term_key":"control.observability","english":"control-system observability","preferred_ko":"관측가능성","display_policy":"ko_en_first","context_note":"제어 상태를 출력 이력으로 구별하는 성질이며 소프트웨어 로그·추적의 관측성을 뜻하지 않는다."}
+{"term_key":"convex_analysis.closed_function","english":"closed extended-real function","preferred_ko":"닫힌 함수","display_policy":"ko_en_first","context_note":"확장실수 함수의 epigraph 닫힘을 지칭한다. 입력 정의역이나 구간이 닫혀 있다는 뜻으로 바꾸지 않는다."}
+{"term_key":"convex_analysis.effective_domain","english":"effective domain","preferred_ko":"유효 정의역","display_policy":"ko_en_first"}
+{"term_key":"convex_analysis.proper_function","english":"proper extended-real function","preferred_ko":"진함수","display_policy":"ko_en_first","context_note":"확장실수 함수의 properness를 뜻한다. 진함수라는 표기만으로 닫힘·볼록성·미분가능성을 가정하지 않는다."}
+{"term_key":"decision.action_selection_policy","english":"policy","preferred_ko":"정책","display_policy":"ko_en_first","context_note":"행동 선택 규칙에 적용한다. 응답에는 응답 생성, 제어·추론·로봇 행동에는 해당 행동 공간을, off-policy에는 데이터 수집 또는 가치 추정 대상을 한정한다. 후회값 비교에는 비교 기준 정책 집합을 유지한다. 운영·접근 정책, 보상 점수 함수 및 가치 함수와 구별한다."}
+{"term_key":"decision.belief_state","english":"belief state","preferred_ko":"믿음 상태","display_policy":"ko_en_first","context_note":"숨은 환경 상태에 관한 확률분포이며 환경 상태 자체나 모델 호출 컨텍스트와 동일시하지 않는다."}
+{"term_key":"decision.reward","english":"reward","preferred_ko":"보상","display_policy":"ko_en_first","context_note":"공급 시점·조건은 용처에 따른다. 보상 합산값인 return, 선호를 나타내는 효용 또는 보상 모델 자체와 동일시하지 않는다."}
+{"term_key":"decision.utility","english":"utility","preferred_ko":"효용","display_policy":"ko_en_first","context_note":"결과에 대한 선호의 수치 가치이며 결정 과정의 즉시 보상과 자동으로 동일시하지 않는다."}
+{"term_key":"discrete.binary_relation","english":"binary relation","preferred_ko":"이항관계","display_policy":"ko_en_first"}
+{"term_key":"discrete.connected_component","english":"connected component","preferred_ko":"연결 성분","display_policy":"ko_en_first"}
+{"term_key":"discrete.connectivity","english":"graph connectivity","preferred_ko":"그래프 연결성","display_policy":"ko_en_first","context_note":"무향 연결성, 방향을 무시하는 약한 유향 연결성, 양방향 도달을 요구하는 강한 유향 연결성을 구별한다. 원문의 대안 조건을 모두 수행할 의무로 바꾸지 않으며 위상적 연결성과 자동 동일시하지 않는다."}
+{"term_key":"discrete.cycle","english":"graph cycle","preferred_ko":"그래프 순환","display_policy":"ko_en_first","context_note":"주어진 방향성과 cycle 규약을 만족하는 그래프 순환에 적용한다. 임의 반복 closed walk나 에이전트·프로그램 제어 루프와 동일시하지 않는다. 순환 부재만으로 프로그램 종료를 결론내리지 않는다."}
+{"term_key":"discrete.equivalence_relation","english":"equivalence relation","preferred_ko":"동치관계","display_policy":"ko_en_first","context_note":"반사성·대칭성·추이성을 가진 관계에 적용한다. 답의 동치관계는 주어진 판정 기준을 유지하며 문자열의 문자 그대로 일치나 추론 경로의 동일성으로 좁히지 않는다."}
+{"term_key":"discrete.graph","english":"graph","preferred_ko":"그래프","display_policy":"ko_en_first","context_note":"꼭짓점·변의 수학적 구조에 적용하며 유한성·방향성·가중치 조건을 유지한다. 함수값 plot이나 계산 dependency 역할과 자동 동일시하지 않는다. 신경망 계산 그래프 등 기존의 정확한 전문 entry가 적용되면 그 표기를 우선한다."}
+{"term_key":"discrete.greatest_lower_bound","english":"greatest lower bound","preferred_ko":"최대하계","display_policy":"ko_en_first","context_note":"infimum에 같은 표기를 사용한다. 모든 하계 중 가장 큰 원소이며 비교 부분집합에 속한다고 가정하지 않는다. 단순 하계 또는 반드시 달성된 최솟값과 구별한다."}
+{"term_key":"discrete.least_upper_bound","english":"least upper bound","preferred_ko":"최소상계","display_policy":"ko_en_first","context_note":"supremum에 같은 표기를 사용한다. 모든 상계 중 가장 작은 원소이며 비교 부분집합에 속한다고 가정하지 않는다. 단순 상계·반드시 달성된 최댓값과 구별한다. +∞ 확장 규약은 원문에서 명시한 경우에만 유지한다."}
+{"term_key":"discrete.lower_bound","english":"lower bound","preferred_ko":"하계","display_policy":"ko_en_first","context_note":"모든 비교 원소 이하인 하계에 적용한다. TI2187 같은 수치 비용 lower bound에는 하한을 문맥상 표현으로 허용하되 최대하계·infimum을 주장하지 않는다. 추정값이라는 사실만으로 정당한 하계라고 가정하지 않는다."}
+{"term_key":"discrete.partial_order","english":"partial order","preferred_ko":"부분순서","display_policy":"ko_en_first","context_note":"부분순서 관계에 적용한다. 부분순서집합은 그 관계를 갖춘 집합의 문법적 표현이다. 모든 두 원소의 비교 가능성이나 수치 부등식 풀이 방법을 함축하지 않는다."}
+{"term_key":"discrete.path","english":"graph path","preferred_ko":"그래프 경로","display_policy":"ko_en_first","context_note":"인접 꼭짓점·변으로 이은 그래프 경로에 적용한다. 방향성·유일성·인과 경로의 활성 조건은 각 문맥대로 유지한다. 실행 추적 기록, symbolic path condition, 시간 궤적과 구별한다."}
+{"term_key":"discrete.recurrence_relation","english":"recurrence relation","preferred_ko":"점화관계","display_policy":"ko_en_first","context_note":"이전 값 또는 주어진 비순환 dependency 순서의 값들과 연결한 수학적 점화관계에 적용한다. 초기값 검증과 식의 검증을 구별하며 실행 재귀, dependency 없는 닫힌 식 및 수렴 보장으로 치환하지 않는다."}
+{"term_key":"discrete.reflexivity","english":"reflexivity of a relation","preferred_ko":"반사성","display_policy":"ko_en_first"}
+{"term_key":"discrete.transitivity","english":"transitivity of a relation","preferred_ko":"추이성","display_policy":"ko_en_first"}
+{"term_key":"discrete.tree","english":"tree","preferred_ko":"트리","display_policy":"ko_en_first","context_note":"연결되고 순환이 없는 바탕 무향 그래프에 적용한다. 루트·탐색 선행 변의 방향·factor-graph 역할은 추가 조건이다. 탐색 결과가 도달 불가능한 꼭짓점까지 포함하거나 최소비용이라는 결론을 표기만으로 추가하지 않는다."}
+{"term_key":"dynamics.equilibrium","english":"dynamical equilibrium","preferred_ko":"평형 상태","display_policy":"ko_en_first","context_note":"주어진 동역학에서 고정된 상태다. 평형이라는 말만으로 안정성·끌림을 보장하지 않으며 게임의 평형이나 최적화 정상점과 구별한다."}
+{"term_key":"dynamics.equilibrium_stability","english":"equilibrium stability","preferred_ko":"평형 상태의 안정성","display_policy":"ko_en_first","context_note":"가까이 시작한 궤적이 가까이 머무르는 성질이다. 평형으로의 끌림 및 수치 알고리즘의 안정성과 구별한다."}
+{"term_key":"dynamics.ordinary_differential_equation","english":"ordinary differential equation","preferred_ko":"상미분방정식","display_policy":"ko_en_first"}
+{"term_key":"dynamics.state","english":"dynamical state","preferred_ko":"동역학적 상태","display_policy":"ko_en_first","context_note":"동역학 법칙으로 전개되는 수학적 상태값에 적용한다. 에이전트 실행 기록, 정형 모델 상태 및 부분관측의 믿음 상태와 구별한다."}
+{"term_key":"dynamics.trajectory","english":"dynamical trajectory","preferred_ko":"궤적","display_policy":"ko_en_first","context_note":"시간에 따른 동역학적 상태 경로다. 목표·근사 한정어를 유지하고 그 표기만으로 실현 가능성·정확성을 가정하지 않는다. 실행 추적 기록 및 모델 추론 경로와 구별한다."}
+{"term_key":"evaluation.aggregation","english":"measurement aggregation","preferred_ko":"측정값 집계","display_policy":"ko_en_first"}
+{"term_key":"evaluation.assessment","english":"evaluation","preferred_ko":"평가","display_policy":"ko_en_first","context_note":"특정 K의 평가 방법을 지칭할 때는 해당 Concept label을 우선한다."}
+{"term_key":"evaluation.benchmark","english":"benchmark","preferred_ko":"벤치마크","display_policy":"ko_en_first","context_note":"벤치마크 설계라는 방법을 가리킬 때는 K0436을 조회한다."}
+{"term_key":"evaluation.claim_coverage","english":"coverage","preferred_ko":"평가 주장 포괄 범위","display_policy":"ko_en_first","context_note":"PILOT006의 테스트 측 coverage와 구별한다. 코드 실행 비율이나 평가 타당성으로 바꾸지 않는다."}
+{"term_key":"evaluation.executable_check","english":"executable check","preferred_ko":"실행 가능한 검사","display_policy":"ko_en_first","context_note":"여기서는 측정에 쓰이는 검사다. 같은 검사의 테스트·게이트 역할은 별도로 식별한다."}
+{"term_key":"evaluation.executable_evaluator","english":"evaluator","preferred_ko":"평가기","display_policy":"ko_en_first","context_note":"PILOT019/020의 실행 가능한 장치를 가리킨다. 사람 평가자나 모델 심판만으로 한정하지 않는다."}
+{"term_key":"evaluation.measurement","english":"measurement","preferred_ko":"측정","display_policy":"ko_en_first","context_note":"측정 결과와 그 결과로 뒷받침할 주장을 구별한다."}
+{"term_key":"evaluation.model_judge","english":"model judge","preferred_ko":"모델 심판","display_policy":"ko_en_first"}
+{"term_key":"evaluation.passing_result","english":"passing result","preferred_ko":"통과 결과","display_policy":"ko_en_first","context_note":"검사의 통과를 과업 전체의 성공·타당성·완료 승인으로 확대하지 않는다. 코드 literal pass는 유지한다."}
+{"term_key":"evaluation.result_uncertainty","english":"evaluation-result uncertainty","preferred_ko":"평가 결과 불확실성","display_policy":"ko_en_first"}
+{"term_key":"evaluation.rubric","english":"evaluation rubric","preferred_ko":"평가 루브릭","display_policy":"ko_en_first"}
+{"term_key":"evaluation.task_outcome_claim","english":"task-outcome claim","preferred_ko":"과업 결과 주장","display_policy":"ko_en_first","context_note":"평가 대상 주장에 한정한다. 실행 성공이나 통과 결과와 동일시하지 않는다."}
+{"term_key":"evaluation.validity","english":"validity","preferred_ko":"평가 타당성","display_policy":"ko_en_first","context_note":"논리식의 validity나 검사 실행 성공과 구별한다. 평가 맥락의 타당성으로 한정한다."}
+{"term_key":"execution.checkpoint","english":"execution checkpoint","preferred_ko":"실행 체크포인트","display_policy":"ko_en_first","context_note":"정해진 경계에서 실행 재구성에 필요한 상태·참조를 담은 snapshot을 뜻한다. 학습 활성값 checkpointing 및 작업 원장과 구별하며 포착 사실만으로 재개 가능성을 보장하지 않는다."}
+{"term_key":"execution.operation_execution","english":"execution","preferred_ko":"실행","display_policy":"ko_en_first","context_note":"작업·연산을 수행하는 문맥에 적용한다. 모델 추론, 기호 실행 및 실행 추적 기록의 고유 의미를 지우지 않는다."}
+{"term_key":"execution.recorded_state","english":"execution state","preferred_ko":"기록된 실행 상태","display_policy":"ko_en_first","context_note":"기록된 작업 진행 상태에 적용한다. 실행 환경 자체의 구성과 구별하며 영속성·정본 권한을 표기만으로 가정하지 않는다."}
+{"term_key":"execution.trace","english":"execution trace","preferred_ko":"실행 추적 기록","display_policy":"ko_en_first","context_note":"기록이라는 명사를 유지한다. 기록을 따라 살피라는 동사 trace와 구별하고 완전성을 자동 가정하지 않는다."}
+{"term_key":"formal_methods.abstraction","english":"abstraction","display_policy":"english","context_note":"Agent의 실행 기록·메모리·모델 입력 문맥과 합치지 않는다; 검사 모델에 대한 범위를 보존한다."}
+{"term_key":"formal_methods.contract","english":"contract","preferred_ko":"소프트웨어 계약","display_policy":"ko_en_first","context_note":"개별 조건·계약과 K0494 전체 방법 label을 구분한다."}
+{"term_key":"formal_methods.counterexample_trace","english":"counterexample trace","display_policy":"english","context_note":"Agent의 실행 기록·메모리·모델 입력 문맥과 합치지 않는다; 검사 모델에 대한 범위를 보존한다."}
+{"term_key":"formal_methods.exploration_bound","english":"exploration bound","display_policy":"english","context_note":"Agent의 실행 기록·메모리·모델 입력 문맥과 합치지 않는다; 검사 모델에 대한 범위를 보존한다."}
+{"term_key":"formal_methods.invariant","english":"invariant","preferred_ko":"불변식","display_policy":"ko_en_first","context_note":"Ontology의 Engineering Invariant record와 동일 객체로 간주하지 않는다."}
+{"term_key":"formal_methods.path_condition","english":"path condition","display_policy":"english","context_note":"일반 경로 설명이나 모델 입력 문맥과 구분한다."}
+{"term_key":"formal_methods.postcondition","english":"postcondition","preferred_ko":"사후 조건","display_policy":"ko_en_first","context_note":"개별 조건·계약과 K0494 전체 방법 label을 구분한다."}
+{"term_key":"formal_methods.precondition","english":"precondition","preferred_ko":"사전 조건","display_policy":"ko_en_first","context_note":"개별 조건·계약과 K0494 전체 방법 label을 구분한다."}
+{"term_key":"formal_methods.proof_obligation","english":"proof obligation","display_policy":"english","context_note":"개별 의무와 의무 생성·해결 방법 K0497을 구분한다."}
+{"term_key":"formal_methods.property","english":"formal property","display_policy":"english","context_note":"형식적 논리 문맥을 유지하며 경험적 task-outcome claim과 구분한다."}
+{"term_key":"formal_methods.reachable_state","english":"reachable state","display_policy":"english","context_note":"Agent의 실행 기록·메모리·모델 입력 문맥과 합치지 않는다; 검사 모델에 대한 범위를 보존한다."}
+{"term_key":"formal_methods.safety","english":"safety","preferred_ko":"안전성","display_policy":"ko_en_first","context_note":"주어진 실행 해석에서 금지된 결과를 배제하는 성질에 한정한다. liveness 및 AI 배치 위험 전체와 구별하며 타입 안전성은 언어·타입 가정을 보존한다."}
+{"term_key":"formal_methods.satisfaction","english":"satisfaction","display_policy":"english","context_note":"주어진 모델·실행과 명세의 관계에 적용한다. 어떤 모델의 존재를 묻는 satisfiability나 사용자 만족도로 바꾸지 않는다."}
+{"term_key":"formal_methods.specification","english":"formal specification","preferred_ko":"정형 명세","display_policy":"ko_en_first","context_note":"개별 명세를 가리킬 때 사용하며 K0494 전체 방법의 label을 대체하지 않는다."}
+{"term_key":"formal_methods.state","english":"state","display_policy":"english","context_note":"Agent의 실행 기록·메모리·모델 입력 문맥과 합치지 않는다; 검사 모델에 대한 범위를 보존한다."}
+{"term_key":"formal_methods.state_predicate","english":"state predicate","display_policy":"english","context_note":"Agent의 실행 기록·메모리·모델 입력 문맥과 합치지 않는다; 검사 모델에 대한 범위를 보존한다."}
+{"term_key":"formal_methods.transition","english":"transition","display_policy":"english","context_note":"Agent의 실행 기록·메모리·모델 입력 문맥과 합치지 않는다; 검사 모델에 대한 범위를 보존한다."}
+{"term_key":"formal_methods.transition_model","english":"transition model","display_policy":"english","context_note":"Agent의 실행 기록·메모리·모델 입력 문맥과 합치지 않는다; 검사 모델에 대한 범위를 보존한다."}
+{"term_key":"game.normal_form_game","english":"normal-form game","preferred_ko":"정규형 게임","display_policy":"ko_en_first"}
+{"term_key":"game.strategy","english":"game strategy","preferred_ko":"게임 전략","display_policy":"ko_en_first"}
+{"term_key":"generative.latent_posterior_inference","english":"latent posterior inference","preferred_ko":"잠재변수 사후 추론","display_policy":"ko_en_first","context_note":"VAE에서 관측 입력으로 조건화한 잠재변수 사후분포의 근사 및 그 인코더 역할에 적용한다. 정확한 사후 계산, prior 잠재 샘플링, 일반 모수 추론 및 예측 모델 추론과 구별한다."}
+{"term_key":"generative.latent_variable","english":"latent variable","preferred_ko":"잠재변수","display_policy":"ko_en_first","context_note":"주어진 확률·생성모형 내부의 미관측 변수에 적용한다. 신경망 내부 벡터나 기록된 에이전트 상태를 위치만으로 잠재변수라고 부르지 않는다."}
+{"term_key":"generative.model","english":"generative model","preferred_ko":"생성 모델","display_policy":"ko_en_first"}
+{"term_key":"generative.transport_velocity_field","english":"generative transport velocity field","preferred_ko":"생성 속도장","display_policy":"ko_en_first","context_note":"확률 경로를 따라 표본을 이동시키는 속도장에 적용한다. 추가 관계가 제시되지 않은 로그밀도 기울기와 동일시하지 않는다."}
+{"term_key":"geometry.coordinate_chart","english":"coordinate chart","preferred_ko":"좌표 카드","display_policy":"ko_en_first","context_note":"다양체의 국소 좌표 표현과 그 정의 영역에 적용한다. 일반 벡터 좌표나 공간의 기준 좌표계와 구별한다."}
+{"term_key":"geometry.coordinate_frame","english":"coordinate frame","preferred_ko":"기준 좌표계","display_policy":"ko_en_first"}
+{"term_key":"geometry.coordinate_origin","english":"coordinate origin","preferred_ko":"원점","display_policy":"ko_en_first"}
+{"term_key":"geometry.embedding","english":"manifold-learning embedding","preferred_ko":"매니폴드 학습 임베딩","display_policy":"ko_en_first","context_note":"지정한 관계 보존을 위한 표현이며 수학적 위상 임베딩이나 전 관계의 완전 보존을 보장하지 않는다."}
+{"term_key":"geometry.euclidean_space","english":"Euclidean space","preferred_ko":"유클리드 공간","display_policy":"ko_en_first","context_note":"명시된 유한차원 실수 유클리드 공간이다. 차원·내적·거리 구조를 보존하며 일반 거리공간이나 배열 저장 배치와 구별한다."}
+{"term_key":"geometry.geodesic_equation","english":"local affinely parametrized geodesic equations","preferred_ko":"국소 아핀 매개 측지선 방정식","display_policy":"ko_en_first"}
+{"term_key":"geometry.riemannian_metric","english":"Riemannian metric","preferred_ko":"리만 계량","display_policy":"ko_en_first","context_note":"접공간에 주어진 매끄러운 내적장이다. 점쌍 거리함수나 경험적 유사도와 구별한다."}
+{"term_key":"geometry.smooth_manifold","english":"smooth manifold","preferred_ko":"매끄러운 다양체","display_policy":"ko_en_first"}
+{"term_key":"graph.distance_relaxation","english":"distance relaxation","preferred_ko":"거리 완화","display_policy":"ko_en_first"}
+{"term_key":"graph.shortest_path","english":"minimum-cost path","preferred_ko":"최단 경로","display_policy":"ko_en_first"}
+{"term_key":"information.self_information","english":"self-information","display_policy":"english","context_note":"분포의 Shannon entropy와 같은 양으로 취급하지 않는다."}
+{"term_key":"information.shannon_entropy","english":"entropy","display_policy":"english","context_note":"self-information 및 cross-entropy와 구별하며 Shannon 의미에 한정한다."}
+{"term_key":"interpretability.explanation_fidelity","english":"explanation fidelity","preferred_ko":"설명 충실도","display_policy":"ko_en_first"}
+{"term_key":"interpretability.explanation_sanity_check","english":"explanation sanity check","display_policy":"english","context_note":"설명에 대한 통제 비교를 가리키며, 확률과정의 정상성이나 정형적 건전성 증명을 뜻하지 않는다."}
+{"term_key":"interpretability.explanation_stability","english":"explanation stability","preferred_ko":"설명 안정성","display_policy":"ko_en_first"}
+{"term_key":"interpretability.representation_probe","english":"representation probe","preferred_ko":"표현 프로브","display_policy":"ko_en_first"}
+{"term_key":"knowledge.knowledge_base","english":"knowledge base","preferred_ko":"지식 베이스","display_policy":"ko_en_first"}
+{"term_key":"knowledge.proof_assistant","english":"proof assistant","preferred_ko":"증명 보조기","display_policy":"ko_en_first"}
+{"term_key":"language.model_vocabulary","english":"model-symbol vocabulary","preferred_ko":"모델 기호 어휘","display_policy":"ko_en_first"}
+{"term_key":"language.probability_smoothing","english":"language probability smoothing","preferred_ko":"언어 모델 확률 평활화","display_policy":"ko_en_first"}
+{"term_key":"language_model.next_token_nll_loss","english":"next-token negative log-likelihood loss","display_policy":"english","context_note":"PILOT011/013의 합산 및 예측 대상 대응을 유지한다. 평균 손실로 바꾸지 않는다. 수학적 likelihood 자체에는 statistics.likelihood를 적용한다."}
+{"term_key":"language_model.prefix_target_alignment","english":"prefix–target alignment","preferred_ko":"접두 시퀀스–예측 대상 대응","display_policy":"ko_en_first","context_note":"PILOT011/013의 위치 대응에 적용한다. 정렬이라는 말만으로 모달리티 정렬이나 AI 정렬을 지칭하지 않는다."}
+{"term_key":"language_model.sequence_probability_factorization","english":"conditional sequence-probability factorization","preferred_ko":"조건부 시퀀스 확률 분해","display_policy":"ko_en_first","context_note":"주어진 초기 접두 시퀀스 규약과 예측 대상 대응을 유지한다. factorization을 인수분해 알고리즘으로 오해하지 않는다."}
+{"term_key":"language_model.token","english":"token","preferred_ko":"토큰","display_policy":"ko_en_first","context_note":"언어 모델 시퀀스 단위에 적용한다. 인증용 access token은 이 항목의 sense가 아니다."}
+{"term_key":"learning.feature_map","english":"feature map","preferred_ko":"특징 사상","display_policy":"ko_en_first","context_note":"여기서는 커널을 내적으로 실현하는 사상이며 신경망의 공간 feature map과 구별한다."}
+{"term_key":"learning.generalization_bound","english":"generalization bound","preferred_ko":"일반화 상계","display_policy":"ko_en_first"}
+{"term_key":"learning.gram_matrix","english":"Gram matrix","preferred_ko":"Gram 행렬","display_policy":"ko_en_first"}
+{"term_key":"learning.hypothesis_class","english":"hypothesis class","preferred_ko":"가설 클래스","display_policy":"ko_en_first"}
+{"term_key":"learning.margin","english":"classification margin","preferred_ko":"분류 마진","display_policy":"ko_en_first","context_note":"기하학적 거리와 정규화하지 않은 functional score의 마진은 지정한 정규화 조건 없이 수치적으로 동일시하지 않는다."}
+{"term_key":"learning.mixture_model","english":"mixture model","preferred_ko":"혼합모형","display_policy":"ko_en_first"}
+{"term_key":"learning.mixture_responsibility","english":"mixture responsibility","preferred_ko":"혼합성분 책임도","display_policy":"ko_en_first","context_note":"관측별 잠재 성분 할당의 사후 확률이며 전역 혼합 가중치나 hard cluster membership과 구별한다."}
+{"term_key":"learning.model_selection","english":"model selection","preferred_ko":"모델 선택","display_policy":"ko_en_first"}
+{"term_key":"learning.prediction_risk","english":"prediction risk","preferred_ko":"예측 위험","display_policy":"ko_en_first","context_note":"예측 손실의 모집단 평균과 경험 평균을 구별한다. 매개변수 추정량의 위험 또는 개별 손실값으로 자동 치환하지 않는다."}
+{"term_key":"learning.pretraining","english":"pretraining","preferred_ko":"사전학습","display_policy":"ko_en_first"}
+{"term_key":"learning.psd_kernel","english":"positive-semidefinite kernel","preferred_ko":"양의 준정부호 커널","display_policy":"ko_en_first","context_note":"확률 측도값 사상인 확률 커널과 구별한다. 한 유한 Gram 행렬의 검사만으로 전체 커널의 유효성을 확정하지 않는다."}
+{"term_key":"learning.regularization","english":"regularization","preferred_ko":"학습 복잡도 제어","display_policy":"ko_en_first","context_note":"학습 중 벌점·제약·제한으로 fitting 복잡도를 제어하는 regularization에 적용한다. 활성값·확률의 정규화와 구별하며 일반화 보장을 뜻하지 않는다."}
+{"term_key":"linalg.basis","english":"basis","preferred_ko":"기저","display_policy":"ko_en_first"}
+{"term_key":"linalg.coordinates","english":"coordinates","preferred_ko":"좌표","display_policy":"ko_en_first","context_note":"기저에 대한 벡터·텐서의 성분을 뜻한다. 기저·성분 순서·텐서 인자 역할과 좌표변환 방향을 유지하며 위치나 메모리 첨자를 뜻하지 않는다."}
+{"term_key":"linalg.dimension","english":"vector-space dimension","preferred_ko":"벡터공간의 차원","display_policy":"ko_en_first"}
+{"term_key":"linalg.dual_space","english":"dual space","preferred_ko":"쌍대공간","display_policy":"ko_en_first","context_note":"주어진 벡터공간의 선형범함수들로 이루어진 쌍대공간이다. 공변벡터는 그 원소로 표현하며 연속 쌍대의 추가 조건이나 단순 좌표 켤레를 자동 동일시하지 않는다."}
+{"term_key":"linalg.eigenspace","english":"eigenspace","preferred_ko":"고유공간","display_policy":"ko_en_first"}
+{"term_key":"linalg.eigenvalue","english":"eigenvalue","preferred_ko":"고유값","display_policy":"ko_en_first","context_note":"고유값은 스칼라이고 고유벡터는 0이 아닌 벡터다. 특이값과 혼동하지 않으며 근사 여부 및 연속·이산 시간의 안정성 조건을 보존한다."}
+{"term_key":"linalg.eigenvector","english":"eigenvector","preferred_ko":"고유벡터","display_policy":"ko_en_first"}
+{"term_key":"linalg.least_squares_solution","english":"least-squares solution","preferred_ko":"최소제곱해","display_policy":"ko_en_first","context_note":"주어진 행렬 문제의 유클리드 잔차 제곱합을 최소화하는 해다. 최소 노름 선택·유일성·근사 행렬을 따로 명시하며 근사 행렬의 해를 원래 행렬의 최소화 해로 단정하지 않는다."}
+{"term_key":"linalg.linear_combination","english":"linear combination","preferred_ko":"선형결합","display_policy":"ko_en_first","context_note":"유한한 스칼라 가중 합에 적용한다. 계수 합 1의 affine 조건은 명시된 경우만 유지하며 확률법칙의 혼합과 확률변수의 선형결합을 구별한다."}
+{"term_key":"linalg.linear_independence","english":"linear independence","preferred_ko":"선형독립","display_policy":"ko_en_first"}
+{"term_key":"linalg.linear_map","english":"linear map","preferred_ko":"선형사상","display_policy":"ko_en_first","context_note":"벡터공간 사이의 덧셈·스칼라배를 보존하는 사상에 적용한다. 입력·출력 차원의 일치, 가역성 및 노름공간 유계성은 표기만으로 가정하지 않는다. transpose·adjoint의 주어진 pairing 조건을 유지한다."}
+{"term_key":"linalg.linear_system","english":"linear system","preferred_ko":"연립일차방정식","display_policy":"ko_en_first","context_note":"미지 벡터에 대한 정적인 연립일차방정식에 적용한다. 동역학적 linear system이나 최소제곱 목적함수와 자동 동일시하지 않으며 정확한 소거와 수치 해법의 정확성 조건을 구별한다."}
+{"term_key":"linalg.matrix","english":"matrix","preferred_ko":"행렬","display_policy":"ko_en_first","context_note":"지정 입력·출력 좌표에서 유한차원 선형사상을 나타내는 행렬에 적용한다. 기저 의존성을 유지하며 임의 데이터 표나 tensor runtime layout과 자동 동일시하지 않는다. 정사각 모양만으로 가역성·대각화를 가정하지 않는다."}
+{"term_key":"linalg.matrix_rank","english":"matrix rank","preferred_ko":"행렬 랭크","display_policy":"ko_en_first"}
+{"term_key":"linalg.norm","english":"norm","preferred_ko":"노름","display_policy":"ko_en_first","context_note":"노름 공리를 만족하는 벡터공간의 크기에 적용한다. 유클리드 또는 내적 유도 노름을 일괄 가정하지 않는다. 행렬·연산자 노름은 해당 공간과 구성 조건을 확인한 특수화이며 그 별도 entry를 우선한다. 점쌍 거리와 normalization 연산으로 치환하지 않는다."}
+{"term_key":"linalg.null_space","english":"null space","preferred_ko":"영공간","display_policy":"ko_en_first"}
+{"term_key":"linalg.orthogonal_projection","english":"orthogonal projection","preferred_ko":"직교사영","display_policy":"ko_en_first"}
+{"term_key":"linalg.orthogonality","english":"inner-product orthogonality","preferred_ko":"직교성","display_policy":"ko_en_first"}
+{"term_key":"linalg.orthonormality","english":"orthonormality","preferred_ko":"정규직교성","display_policy":"ko_en_first","context_note":"원소들이 쌍마다 직교하고 각각 단위 노름인 정규직교성이다. 정규직교계의 가산성·조밀 생성·완비 여부는 따로 명시하며 직교만으로 단위 노름을 추론하지 않는다."}
+{"term_key":"linalg.row_elimination","english":"row elimination","preferred_ko":"행 소거","display_policy":"ko_en_first","context_note":"해를 보존하는 기본 행 변환에 따른 소거에 적용하며 LU가 기록한 변환도 포함한다. 논리적 양화사 제거, 학습 차원 축소 또는 부동소수점 정확성 보장을 뜻하지 않는다."}
+{"term_key":"linalg.singular_value","english":"singular value","preferred_ko":"특이값","display_policy":"ko_en_first","context_note":"주어진 행렬의 SVD에 나타나는 비음수 특이값이다. 0도 포함하되 역수 적용에서 제외하며 고유값·특이점·절단 기준값 자체와 구별한다."}
+{"term_key":"linalg.singular_vector","english":"singular vector","preferred_ko":"특이벡터","display_policy":"ko_en_first","context_note":"지정된 SVD의 좌·우 방향 벡터에 적용한다. 특이값 스칼라·일반 고유벡터와 구별하며, 중복 특이값 군집에서 기저의 유일성을 가정하지 않는다."}
+{"term_key":"linalg.span","english":"linear span","preferred_ko":"선형 생성","display_policy":"ko_en_first","context_note":"선형 생성은 주어진 족의 모든 유한 선형결합이며 생성족·생성한다는 문법적 표현을 허용한다. 선형독립이나 전체 ambient 공간 생성은 자동 가정하지 않는다. 선형 생성의 폐포는 별도의 폐포 연산을 유지한다."}
+{"term_key":"linalg.subspace","english":"linear subspace","preferred_ko":"부분공간","display_policy":"ko_en_first","context_note":"영벡터를 포함하고 선형결합에 닫힌 부분공간에 적용한다. 임의 부분집합·영벡터를 포함하지 않는 affine 집합과 구별하며 norm 위상에서 닫힘은 별도로 유지한다. 학습·제어의 부분공간도 이 조건을 확인한 경우 포함한다."}
+{"term_key":"linalg.tensor","english":"tensor","preferred_ko":"텐서","display_policy":"ko_en_first","context_note":"주어진 벡터공간·쌍대공간 위의 좌표 독립 다중선형 텐서다. 기저 성분과 불변 객체를 구별하며 런타임 수치 배열 텐서나 텐서장의 의미로 자동 확대하지 않는다."}
+{"term_key":"linalg.triangular_matrix","english":"triangular matrix","preferred_ko":"삼각행렬","display_policy":"ko_en_first","context_note":"명시된 대각선의 위쪽 또는 아래쪽 성분이 모두 0인 정사각 삼각행렬이다. 상·하삼각 방향을 보존하며 대각행렬·영행렬도 조건을 만족한다."}
+{"term_key":"linalg.vector","english":"vector","preferred_ko":"벡터","display_policy":"ko_en_first","context_note":"지정 벡터공간의 원소에 적용하며 좌표·차원·스칼라체 조건을 유지한다. 임의 저장 목록이나 벡터 식별이 없는 점, 비교 없는 쌍대 covector 및 학습 표현 방법 전체와 동일시하지 않는다. 수학적 구조를 갖춘 학습 벡터는 포함할 수 있다."}
+{"term_key":"linalg.vector_space","english":"vector space","preferred_ko":"벡터공간","display_policy":"ko_en_first","context_note":"주어진 덧셈과 스칼라곱에 대해 벡터공간 공리를 만족하는 공간이다. 실수체·유한차원·함수나 수열 원소 등의 조건을 보존하며 완비성을 추론하지 않는다."}
+{"term_key":"linalg.zero_vector","english":"zero vector","preferred_ko":"영벡터","display_policy":"ko_en_first","context_note":"주어진 벡터공간의 덧셈 항등원이다. 스칼라 0이나 빈 집합과 구별하며 영이 아닌 벡터 조건을 지우지 않는다."}
+{"term_key":"logic.axiom","english":"axiom","display_policy":"english","context_note":"신경망의 예측 inference, 학습 representation 또는 task objective에 적용하지 않는다."}
+{"term_key":"logic.background_theory","english":"background theory","display_policy":"english","context_note":"논리 질의 문맥에만 적용한다."}
+{"term_key":"logic.boolean_formula","english":"Boolean formula","display_policy":"english","context_note":"형식적 논리 문맥을 유지하며 경험적 task-outcome claim과 구분한다."}
+{"term_key":"logic.counterexample","english":"counterexample","preferred_ko":"반례","display_policy":"ko_en_first","context_note":"모델 검사에서는 반례 trace의 모델·추상화 가정을 유지한다."}
+{"term_key":"logic.decision_procedure","english":"decision procedure","display_policy":"english","context_note":"논리 질의 문맥에만 적용한다."}
+{"term_key":"logic.formal_goal","english":"formal goal","display_policy":"english","context_note":"신경망의 예측 inference, 학습 representation 또는 task objective에 적용하지 않는다."}
+{"term_key":"logic.formula","english":"formula","display_policy":"english","context_note":"형식적 논리 문맥을 유지하며 경험적 task-outcome claim과 구분한다."}
+{"term_key":"logic.fragment","english":"fragment","display_policy":"english","context_note":"논리 질의 문맥에만 적용한다."}
+{"term_key":"logic.inference","english":"logical inference","display_policy":"english","context_note":"신경망의 예측 inference, 학습 representation 또는 task objective에 적용하지 않는다."}
+{"term_key":"logic.inference_rule","english":"inference rule","display_policy":"english","context_note":"신경망의 예측 inference, 학습 representation 또는 task objective에 적용하지 않는다."}
+{"term_key":"logic.interpretation","english":"logical interpretation","preferred_ko":"논리 해석","display_policy":"ko_en_first","context_note":"명시된 우주에서 논리 기호에 의미를 부여하여 논리식의 진릿값을 정하는 해석이다. 신경망 예측 모델, 설명 가능성 및 해석을 찾는 절차와 구별한다."}
+{"term_key":"logic.logical_form","english":"logical form","display_policy":"english"}
+{"term_key":"logic.model_finding","english":"model finding","display_policy":"english","context_note":"신경망의 예측 inference, 학습 representation 또는 task objective에 적용하지 않는다."}
+{"term_key":"logic.negation","english":"negation","display_policy":"english","context_note":"형식적 논리 문맥을 유지하며 경험적 task-outcome claim과 구분한다."}
+{"term_key":"logic.proof_search","english":"proof search","display_policy":"english","context_note":"신경망의 예측 inference, 학습 representation 또는 task objective에 적용하지 않는다."}
+{"term_key":"logic.proposition","english":"proposition","preferred_ko":"명제","display_policy":"ko_en_first"}
+{"term_key":"logic.quantifier","english":"quantifier","preferred_ko":"양화사","display_policy":"ko_en_first","context_note":"전칭·존재 양화사를 뜻한다. 변수의 범위·결속 범위·양화 순서를 보존하며 수치 상하한, 첨자 수축이나 실행 대입과 구별한다."}
+{"term_key":"logic.reasoning_query","english":"formal reasoning query","display_policy":"english","context_note":"형식적 논리 문맥을 유지하며 경험적 task-outcome claim과 구분한다."}
+{"term_key":"logic.representation_transformation","english":"representation transformation","display_policy":"english","context_note":"신경망의 예측 inference, 학습 representation 또는 task objective에 적용하지 않는다."}
+{"term_key":"logic.sat","english":"Boolean satisfiability problem","display_policy":"acronym","acronym":"SAT","context_note":"필요한 첫 사용 full form은 이 항목의 English source를 쓴다. 약어 SAT와 solver 결과 literal sat를 구별한다."}
+{"term_key":"logic.satisfiability","english":"satisfiability","display_policy":"english","context_note":"constraint satisfaction의 전체 탐색 방법과 동일시하지 않는다."}
+{"term_key":"logic.satisfiable","english":"satisfiable","display_policy":"english","context_note":"논리 질의 문맥에만 적용한다."}
+{"term_key":"logic.smt","english":"Satisfiability modulo theories","display_policy":"acronym","acronym":"SMT","context_note":"필요한 첫 사용 full form은 이 항목의 English source를 쓴다."}
+{"term_key":"logic.termination_guarantee","english":"termination guarantee","display_policy":"english","context_note":"논리 질의 문맥에만 적용한다."}
+{"term_key":"logic.unknown","english":"unknown","display_policy":"english","context_note":"solver의 unknown은 원래 validity에 대한 부정 결론이 아니다."}
+{"term_key":"logic.unsatisfiable","english":"unsatisfiable","display_policy":"english","context_note":"논리 질의 문맥에만 적용한다."}
+{"term_key":"logic.validity","english":"validity","display_policy":"english","context_note":"평가의 validity나 소프트웨어 validation에는 적용하지 않는다."}
+{"term_key":"math.affine_transformation","english":"affine transformation","preferred_ko":"아핀 변환","display_policy":"ko_en_first"}
+{"term_key":"math.bijectivity","english":"bijectivity / bijection","preferred_ko":"전단사","display_policy":"ko_en_first","context_note":"주어진 정의역과 공역 사이에서 단사와 전사를 모두 만족함을 뜻한다. 전단사 대응과 그 성질의 문법적 표현을 포함하며 단사만으로 전단사를 추론하지 않는다."}
+{"term_key":"math.cartesian_product","english":"Cartesian product","preferred_ko":"데카르트 곱","display_policy":"ko_en_first"}
+{"term_key":"math.complex_argument","english":"complex argument","preferred_ko":"편각","display_policy":"ko_en_first","context_note":"0이 아닌 복소수의 방향각을 한 바퀴 회전 차이까지 동일시한 편각이다. 0에서는 정의하지 않으며 주편각의 가지 규약은 명시된 경우에만 적용한다."}
+{"term_key":"math.complex_number","english":"complex number","preferred_ko":"복소수","display_policy":"ko_en_first","context_note":"실수부와 허수부를 가진 스칼라 복소수를 뜻한다. 복소수값 함수나 벡터 전체를 이 표기로 바꾸지 않는다."}
+{"term_key":"math.determinant","english":"determinant","preferred_ko":"행렬식","display_policy":"ko_en_first","context_note":"주어진 체 위 정사각행렬의 스칼라 행렬식이다. 실수 야코비 행렬에서만 부호·절댓값의 방향·체적 역할을 적용하며 행렬 전체나 밀도값과 구별한다."}
+{"term_key":"math.exponent","english":"exponent","preferred_ko":"지수","display_policy":"ko_en_first","context_note":"거듭제곱에서 밑에 적용되는 지수를 뜻한다. 거듭제곱함수의 고정 지수와 지수함수의 변하는 입력 역할을 문맥에 따라 구별한다."}
+{"term_key":"math.exponential_function","english":"exponential function","preferred_ko":"지수함수","display_policy":"ko_en_first","context_note":"허용되는 고정된 양의 밑을 변하는 지수에 적용한 실수 지수함수다. 로그와의 역함수 관계에서는 밑이 1이 아닌 조건과 입력 범위를 보존한다."}
+{"term_key":"math.function","english":"function","preferred_ko":"함수","display_policy":"ko_en_first","context_note":"수학적 함수 객체에 적용한다. 사상·함수값·함수군은 문맥의 문법적 표현이며 입력·출력 형과 선형성·가측성 등의 조건을 유지한다. 실행 코드 routine이나 구성요소의 기능을 이 항목으로 치환하지 않는다."}
+{"term_key":"math.function_codomain","english":"codomain","preferred_ko":"공역","display_policy":"ko_en_first","context_note":"함수의 지정된 목표 집합·공간에 적용한다. 실제 도달한 상이나 전체 정의역의 치역과 같다고 가정하지 않는다."}
+{"term_key":"math.function_composition","english":"function composition","preferred_ko":"함수의 합성","display_policy":"ko_en_first","context_note":"함수의 적용 순서와 중간 출력이 다음 정의역에 속한다는 조건을 유지한다. 합성함수·합성사상은 결과 표현이다. 일반 업무 순서나 임의 곱셈으로 확대하지 않는다."}
+{"term_key":"math.function_domain","english":"domain","preferred_ko":"정의역","display_policy":"ko_en_first","context_note":"함수·표현식이 정의되는 입력 집합에 적용한다. 합성 가능성, 거듭제곱 가지 및 변환을 정의하는 기댓값의 존재 등 실제 제한을 유지한다. 공역·상, 분야 분류 Domain 및 모델 호출 컨텍스트와 구별한다."}
+{"term_key":"math.identity","english":"mathematical identity","preferred_ko":"항등식","display_policy":"ko_en_first","context_note":"명시된 허용 값이나 첨자 전체에서 성립하는 등식이다. 정의역·밑·진수 제한을 유지하며 값을 찾아야 하는 방정식이나 객체 동일성과 구별한다."}
+{"term_key":"math.injectivity","english":"injectivity","preferred_ko":"단사성","display_policy":"ko_en_first","context_note":"서로 다른 정의역 입력이 서로 다른 출력을 갖는 단사성을 뜻한다. 전사성과 구별하며 국소 야코비 행렬식의 비영만으로 전역 단사성을 추론하지 않는다."}
+{"term_key":"math.inverse_function","english":"inverse function","preferred_ko":"역함수","display_policy":"ko_en_first","context_note":"명시된 정의역·공역 사이의 전단사를 양방향으로 되돌리는 역함수다. 제한된 정의역의 역함수 가지, 역행렬 및 역의 존재 표현을 포함하며 역상·의사역행렬·한쪽 복원을 구별한다."}
+{"term_key":"math.logarithm","english":"logarithm","preferred_ko":"로그","display_policy":"ko_en_first","context_note":"양수이면서 1이 아닌 고정 밑과 양의 실수 진수에 대한 로그다. 복소 로그의 가지나 실행 로그 기록으로 의미를 확대하지 않는다."}
+{"term_key":"math.logarithm_argument","english":"logarithm argument","preferred_ko":"진수","display_policy":"ko_en_first","context_note":"주어진 실수 로그의 양의 입력인 진수다. 로그의 밑, 복소수 편각 및 논증과 구별한다."}
+{"term_key":"math.mapping_image","english":"image","preferred_ko":"상","display_policy":"ko_en_first","context_note":"점의 상과 지정 입력 부분집합의 상을 문맥대로 구별한다. 전체 정의역의 상이 치역이며 지정 공역과 같다고 가정하지 않는다. 디지털 영상이나 학습된 모델 표현을 뜻하지 않는다."}
+{"term_key":"math.mapping_preimage","english":"preimage","preferred_ko":"역상","display_policy":"ko_en_first","context_note":"목표 값·부분집합으로 보내지는 모든 입력의 역상에 적용한다. 전단사 역함수나 선택한 하나의 역함수 가지를 뜻하지 않으며 전단사성을 가정하지 않는다."}
+{"term_key":"math.power","english":"power","preferred_ko":"거듭제곱","display_policy":"ko_en_first","context_note":"허용된 실수 입력에서 밑을 명시된 지수로 거듭제곱하는 연산이다. 복소 가지를 임의 도입하지 않으며 지수법칙의 유효 범위를 보존한다."}
+{"term_key":"math.power_base","english":"power base","preferred_ko":"밑","display_policy":"ko_en_first","context_note":"거듭제곱에서 지수를 적용받는 수이며 로그에서는 역 지수 척도를 정하는 밑이다. 지수·진수·선형대수의 기저와 구별하고 각 연산의 밑 제한을 보존한다."}
+{"term_key":"math.real_interval","english":"real interval","preferred_ko":"실수 구간","display_policy":"ko_en_first","context_note":"실수선의 구간을 뜻한다. 끝점 포함 여부와 유계성을 따로 명시하며 경과 시간·신뢰 해석·확률법칙을 자동 부여하지 않는다."}
+{"term_key":"math.real_number","english":"real number","preferred_ko":"실수","display_policy":"ko_en_first","context_note":"실수 스칼라를 뜻한다. 입력이 실수라는 조건과 출력이 실숫값이라는 조건을 구별하며 실수체·좌표 성분 조건을 문맥에 맞게 보존한다."}
+{"term_key":"math.root_operation","english":"root operation","preferred_ko":"거듭제곱근","display_policy":"ko_en_first","context_note":"허용된 실수 범위의 거듭제곱근을 뜻한다. 역함수 가지의 정의역 제한을 보존하며 일반 방정식의 해나 트리의 뿌리와 구별한다."}
+{"term_key":"math.scalar_gradient","english":"gradient of a scalar function","preferred_ko":"스칼라 함수의 기울기","display_policy":"ko_en_first","context_note":"명시된 좌표와 짝짓기 규약에서 스칼라 함수의 전체 일차 변화를 나타내는 기울기 벡터다. 미분가능성·좌표·대상을 보존하며 단일 부분도함수, 미분가능하지 않은 목적함수의 부분기울기 또는 추정값을 정확한 기울기로 동일시하지 않는다."}
+{"term_key":"math.sequence","english":"sequence","preferred_ko":"수열","display_policy":"ko_en_first"}
+{"term_key":"math.set","english":"set","preferred_ko":"집합","display_policy":"ko_en_first"}
+{"term_key":"math.set_partition","english":"set partition","preferred_ko":"집합의 분할","display_policy":"ko_en_first","context_note":"바탕 집합을 서로 겹치지 않게 모두 덮는 부분들의 집합 분할이다. 비어 있지 않은 블록 규약·유한 사건 조건은 문맥에 명시하며 끝점을 공유하는 구간 세분과 구별한다."}
+{"term_key":"math.subset","english":"subset","preferred_ko":"부분집합","display_policy":"ko_en_first","context_note":"같은 집합인 경우도 포함하는 부분집합에 적용한다. 진부분집합이나 선형 부분공간이라는 추가 조건은 표기만으로 가정하지 않는다."}
+{"term_key":"math.variable_index_binding","english":"variable/index binding","preferred_ko":"변수·첨자 결속","display_policy":"ko_en_first","context_note":"변수·첨자의 구문적 결속에 적용하며 양화사 결속 범위와 결속되지 않은 occurrence를 문맥대로 표시한다. 수치 상·하계, 연립방정식의 자유 매개변수 및 실행 중 대입과 구별한다."}
+{"term_key":"mathematics.assumption","english":"assumption","display_policy":"english","context_note":"모델에 전달되는 context나 학습 목표가 아니다."}
+{"term_key":"mathematics.contrapositive_reasoning","english":"contrapositive reasoning","preferred_ko":"대우를 이용한 추론","display_policy":"ko_en_first"}
+{"term_key":"mathematics.derivation","english":"derivation","display_policy":"english","context_note":"증명과 유도를 문맥 없이 서로 바꾸지 않는다."}
+{"term_key":"mathematics.direct_proof","english":"direct proof","preferred_ko":"직접 증명","display_policy":"ko_en_first"}
+{"term_key":"mathematics.induction","english":"mathematical induction","preferred_ko":"수학적 귀납법","display_policy":"ko_en_first"}
+{"term_key":"mathematics.proof","english":"proof","preferred_ko":"증명","display_policy":"ko_en_first"}
+{"term_key":"mathematics.proof_by_cases","english":"proof by cases","preferred_ko":"경우를 나누는 증명","display_policy":"ko_en_first"}
+{"term_key":"mathematics.proof_by_contradiction","english":"proof by contradiction","preferred_ko":"귀류법","display_policy":"ko_en_first"}
+{"term_key":"measure.integral","english":"integral with respect to a measure","preferred_ko":"측도에 대한 적분","display_policy":"ko_en_first","context_note":"주어진 측도에 대한 적분에 적용한다. 정규화된 확률법칙의 기댓값 및 수치 구적 근사와 구별하고, 두 무한값의 정의 불가능한 차를 보존한다."}
+{"term_key":"measure.measurability","english":"measurability of a map","preferred_ko":"가측성","display_policy":"ko_en_first","context_note":"사상이 가측 집합의 역상을 보존하는 성질이다. 수치 측정 가능성·연속성·적분가능성과 구별하며, 적합성에는 같은 시점의 정보 조건이 추가된다."}
+{"term_key":"measure.measure","english":"measure","preferred_ko":"측도","display_policy":"ko_en_first"}
+{"term_key":"measure.product_measure","english":"product measure","preferred_ko":"곱측도","display_policy":"ko_en_first"}
+{"term_key":"measure.sigma_algebra","english":"sigma-algebra","preferred_ko":"시그마 대수","display_policy":"ko_en_first","context_note":"시그마 대수 하나와 시간에 따라 증가하는 그 대수들의 족인 정보 여과를 구별한다. 측도 자체나 가산 닫힘이 없는 집합 대수로 대체하지 않는다."}
+{"term_key":"mechanics.torque","english":"torque","preferred_ko":"토크","display_policy":"ko_en_first"}
+{"term_key":"memory.episodic_content","english":"episodic memory content","preferred_ko":"일화 메모리 내용","display_policy":"ko_en_first"}
+{"term_key":"memory.procedural_content","english":"procedural memory content","preferred_ko":"절차 메모리 내용","display_policy":"ko_en_first"}
+{"term_key":"memory.semantic_content","english":"semantic memory content","preferred_ko":"의미 메모리 내용","display_policy":"ko_en_first"}
+{"term_key":"mixture_of_experts.expert","english":"mixture-of-experts transformation","preferred_ko":"전문가 변환","display_policy":"ko_en_first"}
+{"term_key":"ml.model_inference","english":"inference","preferred_ko":"모델 추론","display_policy":"ko_en_first","context_note":"모델을 적용하는 문맥에 한정한다. 논리적 추론·통계적 추론이나 에이전트 실행 전체를 뜻하지 않는다."}
+{"term_key":"ml.model_parameter","english":"model parameter","preferred_ko":"모델 매개변수","display_policy":"ko_en_first","context_note":"모델 계산을 정하는 매개변수에 적용하며 통계적 모집단 모수·입력값과 구별한다. 특정 인터페이스에서 고정될 수 있고, 값의 일치만으로 공유 매개변수라고 판단하지 않는다."}
+{"term_key":"ml.optimization_objective","english":"objective","preferred_ko":"최적화 목적함수","display_policy":"ko_en_first","context_note":"PILOT021의 optimization target 및 수치 최적화 문맥에 적용한다. 작업 목표나 학습 목표에 적용하지 않는다."}
+{"term_key":"ml.prediction_loss","english":"prediction loss","preferred_ko":"예측 손실","display_policy":"ko_en_first","context_note":"정확한 신경망 손실 및 next-token NLL 문맥에는 기존 해당 항목을 우선한다. 개별 비교 비용을 전체 최적화 목적함수, 기대 위험 또는 regret와 동일시하지 않는다."}
+{"term_key":"model.encoder","english":"encoder","preferred_ko":"인코더","display_policy":"ko_en_first","context_note":"여기서는 검색 질의·항목을 밀집 검색 비교용 데이터로 변환하는 모델 인코더에 적용한다. 입력과 출력 자체 및 text-decoding API와 구별하며 모든 인코더로 확대하지 않는다."}
+{"term_key":"model.invocation_context","english":"context","preferred_ko":"컨텍스트","display_policy":"ko_en_first","context_note":"현재 모델 호출에 노출되는 정보 문맥에 적용한다. 실행 상태·장기 메모리 및 사용 상황에 대한 가정을 대신하지 않는다."}
+{"term_key":"model_reasoning.trajectory","english":"model reasoning trajectory","preferred_ko":"모델 추론 경로","display_policy":"ko_en_first"}
+{"term_key":"multiagent.commitment","english":"agent work commitment","preferred_ko":"작업 수행 약정","display_policy":"ko_en_first"}
+{"term_key":"multimodal.modality","english":"modality","preferred_ko":"모달리티","display_policy":"ko_en_first"}
+{"term_key":"neural.activation_value","english":"activation","preferred_ko":"활성값","display_policy":"ko_en_first","context_note":"활성화 함수의 출력값 문맥에 적용한다. branching activations는 분기하는 활성값으로 조합한다."}
+{"term_key":"neural.computation_graph","english":"neural computation graph","preferred_ko":"신경망 계산 그래프","display_policy":"ko_en_first","context_note":"feed-forward 조건에는 neural.feed_forward의 표기를 적용한다. 지식 Semantic Graph와 구별한다."}
+{"term_key":"neural.feed_forward","english":"feed-forward","preferred_ko":"피드포워드","display_policy":"ko_en_first","context_note":"feed-forward 구조 또는 구성요소에 적용한다. 계산 방향인 forward pass와 구별한다."}
+{"term_key":"neural.gradient","english":"gradient","preferred_ko":"기울기","display_policy":"ko_en_first","context_note":"신경망의 개별 기울기 계산값에 적용한다. K0032 자체를 지칭할 때는 Concept 표기를 우선한다."}
+{"term_key":"neural.gradient_accumulation","english":"gradient accumulation","preferred_ko":"기울기 누적","display_policy":"ko_en_first","context_note":"이 LO에서는 분기·공유 사용처의 기여 합산이다. 여러 미니배치의 누적만으로 좁히지 않는다."}
+{"term_key":"neural.local_derivative","english":"local derivative","preferred_ko":"국소 도함수","display_policy":"ko_en_first","context_note":"국소 연산의 도함수에 한정한다. 유한차분 근사나 전체 매개변수 기울기로 바꾸지 않는다."}
+{"term_key":"neural.loss","english":"loss","preferred_ko":"손실","display_policy":"ko_en_first","context_note":"scalar loss는 스칼라 손실로 조합한다. 손실값·손실식과 최적화 목표 전체를 문맥에 맞게 구별한다."}
+{"term_key":"neural.loss_sensitivity","english":"sensitivity","preferred_ko":"손실 민감도","display_policy":"ko_en_first","context_note":"활성값에 대한 손실의 미분을 가리키는 문맥에 적용한다. 분류기의 sensitivity 지표와 혼동하지 않는다."}
+{"term_key":"neural.normalization_operation","english":"normalization","preferred_ko":"신경망 정규화","display_policy":"ko_en_first","context_note":"신경망 활성값 정규화 연산에 한정한다. 확률분포 normalization이나 regularization과 무표지로 합치지 않는다."}
+{"term_key":"neural.pooling","english":"pooling","preferred_ko":"풀링","display_policy":"ko_en_first"}
+{"term_key":"neural.representation","english":"representation","preferred_ko":"신경망 표현","display_policy":"ko_en_first","context_note":"PILOT012의 신경망 내부 표현에 적용한다. 논리식의 representation transformations와 동일 sense로 묶지 않는다."}
+{"term_key":"neural.shared_parameter","english":"shared parameter","preferred_ko":"공유 매개변수","display_policy":"ko_en_first","context_note":"같은 매개변수를 여러 사용처에서 쓰는 경우에 적용한다. 값이 우연히 같은 별도 매개변수와 구별한다."}
+{"term_key":"numerical.condition_number","english":"condition number","preferred_ko":"조건수","display_policy":"ko_en_first","context_note":"문제의 입력·출력 민감도를 나타내며 노름과 섭동 규약을 보존한다. 알고리즘의 안정성이나 해 오차 자체와 구별한다."}
+{"term_key":"numerical.equation_residual","english":"equation residual","preferred_ko":"잔차","display_policy":"ko_en_first","context_note":"명시한 방정식에 계산 대상을 대입하여 얻는 결함이다. 부호·노름 규약을 유지하며 해 오차 자체나 Transformer의 residual stream과 구별한다."}
+{"term_key":"numerical.overflow","english":"numerical overflow","preferred_ko":"수치 오버플로","display_policy":"ko_en_first"}
+{"term_key":"numerical.pivoting","english":"pivoting","preferred_ko":"피벗팅","display_policy":"ko_en_first"}
+{"term_key":"numerical.truncation_error","english":"truncation error of a numerical approximation","preferred_ko":"절단 오차","display_policy":"ko_en_first","context_note":"유한 수치 근사에서 생기는 오차에 적용한다. 반올림·표본 오차 및 SVD 랭크 절단의 오차와 구별한다."}
+{"term_key":"numerical.underflow","english":"numerical underflow","preferred_ko":"수치 언더플로","display_policy":"ko_en_first"}
+{"term_key":"numerics.precision_format","english":"numerical precision format","preferred_ko":"수치 정밀도 형식","display_policy":"ko_en_first"}
+{"term_key":"online.full_information_feedback","english":"full-information feedback","preferred_ko":"전체 선택지 피드백","display_policy":"ko_en_first"}
+{"term_key":"online.regret","english":"regret","preferred_ko":"후회값","display_policy":"ko_en_first","context_note":"지정된 비교대상에 대한 누적 손실 초과량 또는 대응하는 보상 부족량을 뜻한다. 비교대상 클래스와 기대값 여부는 문맥의 규약을 따른다."}
+{"term_key":"optimization.convexity","english":"convexity","preferred_ko":"볼록성","display_policy":"ko_en_first"}
+{"term_key":"optimization.feasibility","english":"optimization feasibility","preferred_ko":"제약 충족성","display_policy":"ko_en_first"}
+{"term_key":"optimization.lagrange_multiplier","english":"Lagrange multiplier","preferred_ko":"라그랑주 승수","display_policy":"ko_en_first"}
+{"term_key":"optimization.optimality","english":"optimization optimality","preferred_ko":"최적성","display_policy":"ko_en_first"}
+{"term_key":"optimization.proximal_map","english":"proximal map","preferred_ko":"근접 사상","display_policy":"ko_en_first"}
+{"term_key":"optimization.smoothness","english":"smoothness of an optimization function","preferred_ko":"최적화 함수의 매끄러움","display_policy":"ko_en_first","context_note":"실제 미분 차수·연속성·Lipschitz 조건은 주어진 최적화 방법의 가정으로 확인한다. 매끄러움이라는 표기만으로 C∞ 또는 Lipschitz 기울기를 가정하지 않는다."}
+{"term_key":"optimization.step_size","english":"optimization step size","preferred_ko":"갱신 보폭","display_policy":"ko_en_first"}
+{"term_key":"performance.latency","english":"latency","preferred_ko":"지연시간","display_policy":"ko_en_first"}
+{"term_key":"performance.throughput","english":"throughput","preferred_ko":"처리량","display_policy":"ko_en_first","context_note":"여기서 처리량은 단위 시간당 처리율이며, 총작업량이나 보장된 최대 용량을 뜻하지 않는다."}
+{"term_key":"planning.modeled_action","english":"planning action","preferred_ko":"계획 행동","display_policy":"ko_en_first","context_note":"계획 모델의 적용 조건과 효과를 가진 행동 연산자에 적용한다. 모델 안의 실행 가능성을 실제 외부 실행 성공으로 해석하지 않는다. 결정성은 해당 모델의 조건으로 유지하며 일반 계획 행동의 공리로 가정하지 않는다."}
+{"term_key":"planning.relaxation","english":"planning relaxation","preferred_ko":"계획 모델 완화","display_policy":"ko_en_first"}
+{"term_key":"posttraining.preference_reward_model","english":"preference reward model","preferred_ko":"선호 보상 모델","display_policy":"ko_en_first"}
+{"term_key":"prediction.input_perturbation","english":"input perturbation","preferred_ko":"입력 섭동","display_policy":"ko_en_first"}
+{"term_key":"prediction.uncertainty","english":"predictive uncertainty","preferred_ko":"예측 불확실성","display_policy":"ko_en_first"}
+{"term_key":"privacy.private_data_reconstruction","english":"private data reconstruction","preferred_ko":"비공개 데이터 재구성","display_policy":"ko_en_first"}
+{"term_key":"probabilistic_models.factor_graph","english":"factor graph","preferred_ko":"인자 그래프","display_policy":"ko_en_first"}
+{"term_key":"probabilistic_models.graph_markov_property","english":"graphical Markov property","preferred_ko":"그래프의 Markov 성질","display_policy":"ko_en_first","context_note":"그래프 분리가 조건부 독립을 함의하는 방향이다. faithfulness 역방향과 시간 과정의 Markov 성질을 뜻하지 않는다."}
+{"term_key":"probabilistic_models.hmm_hidden_state","english":"hidden Markov state","preferred_ko":"HMM 잠재 상태","display_policy":"ko_en_first","context_note":"HMM의 시점별 이산 잠재 상태에 적용한다. 결합 사후확률 최대 상태 경로와 각 시점 주변 사후분포를 구별한다. 관측 emission, 신경망 은닉벡터, 환경 상태 및 기록된 실행 상태와 합치지 않는다."}
+{"term_key":"probabilistic_models.message","english":"graphical-model message","preferred_ko":"그래프 모델 메시지","display_policy":"ko_en_first"}
+{"term_key":"probability.conditional_expectation","english":"conditional expectation","preferred_ko":"조건부 기댓값","display_policy":"ko_en_first","context_note":"주어진 정보에 대한 조건부 평균이다. 조건부 분포 객체 및 무조건부 기댓값과 구별하며 적분가능성과 조건 정보를 유지한다."}
+{"term_key":"probability.conditional_probability","english":"conditional probability","display_policy":"english","context_note":"개별 조건부 확률값에 적용한다. 조건부 분포 전체나 인과 개입 결과와 동일시하지 않는다."}
+{"term_key":"probability.conditioning","english":"probabilistic conditioning","preferred_ko":"확률 조건화","display_policy":"ko_en_first"}
+{"term_key":"probability.covariance","english":"covariance","preferred_ko":"공분산","display_policy":"ko_en_first","context_note":"중심화한 곱의 기댓값에 적용한다. 행렬·커널은 그 쌍별 값들을 모은 것이며, 0 공분산이 확률적 독립성을 뜻하지 않는다."}
+{"term_key":"probability.density","english":"probability density","preferred_ko":"확률밀도함수","display_policy":"ko_en_first","context_note":"밀도값을 점 확률로 읽지 않는다. 기준측도와 정규화 여부를 보존하며 비례 표현을 이미 정규화된 밀도로 취급하지 않는다. 결합·주변 밀도의 정확한 범위에는 기존 항목을 우선한다."}
+{"term_key":"probability.distribution","english":"probability distribution","preferred_ko":"확률분포","display_policy":"ko_en_first"}
+{"term_key":"probability.distribution_temperature","english":"distribution temperature","preferred_ko":"분포 조정 온도","display_policy":"ko_en_first","context_note":"분포의 날카로움을 조정하는 온도 규약에 적용한다. 연화와 첨예화 방향·공식은 주어진 규약을 따르며 물리적 온도·갱신 보폭·보상 할인과 구별한다."}
+{"term_key":"probability.event","english":"probability event","preferred_ko":"사건","display_policy":"ko_en_first"}
+{"term_key":"probability.expectation","english":"expectation","preferred_ko":"기댓값","display_policy":"ko_en_first","context_note":"일상적인 기대나 소프트웨어의 기대 동작에는 적용하지 않는다."}
+{"term_key":"probability.factorization","english":"probability factorization","preferred_ko":"확률 분해","display_policy":"ko_en_first","context_note":"확률법칙의 분해에 적용하며 정수 인수분해와 구별한다. 기존 조건부 시퀀스 확률 분해의 접두 시퀀스·예측 대상 규약은 해당 문맥에서 별도로 유지한다."}
+{"term_key":"probability.gaussian_process","english":"Gaussian process","display_policy":"english"}
+{"term_key":"probability.joint_density","english":"joint density","preferred_ko":"결합 확률밀도함수","display_policy":"ko_en_first"}
+{"term_key":"probability.joint_mass_function","english":"joint probability mass function","display_policy":"english"}
+{"term_key":"probability.marginal_density","english":"marginal density","preferred_ko":"주변 확률밀도함수","display_policy":"ko_en_first"}
+{"term_key":"probability.marginal_distribution","english":"marginal distribution","preferred_ko":"주변 확률분포","display_policy":"ko_en_first","context_note":"주변 법칙 전체에 적용한다. 질량함수·밀도 표현 자체에는 해당 기존 항목을 사용하고 조건화와 주변화를 구별한다."}
+{"term_key":"probability.marginal_mass","english":"marginal mass","display_policy":"english"}
+{"term_key":"probability.moment","english":"moment","preferred_ko":"적률","display_policy":"ko_en_first","context_note":"차수·중심화 여부·유한성 조건을 보존한다. 이차 원적률을 자동 분산으로 읽지 않으며, 경험적 추정량이나 역학의 토크와 구별한다."}
+{"term_key":"probability.moment_generating_function","english":"moment-generating function","preferred_ko":"적률생성함수","display_policy":"ko_en_first"}
+{"term_key":"probability.normalization","english":"normalization","preferred_ko":"확률 정규화","display_policy":"ko_en_first","context_note":"PILOT012 신경망 normalization 연산과 구별한다."}
+{"term_key":"probability.probability","english":"probability value","preferred_ko":"확률","display_policy":"ko_en_first","context_note":"명시된 사건이나 값 집합에 배정되는 확률값이다. 확률분포 전체·밀도 높이·정규화되지 않은 점수와 구별하고 조건부 여부를 추측하지 않는다."}
+{"term_key":"probability.probability_kernel","english":"probability kernel","preferred_ko":"확률 커널","display_policy":"ko_en_first"}
+{"term_key":"probability.probability_space","english":"probability space","preferred_ko":"확률공간","display_policy":"ko_en_first","context_note":"총질량 1인 측도를 갖춘 결과·사건 구조다. 결과집합만, 정규화되지 않은 측도 공간 및 확률분포법칙 하나와 구별한다."}
+{"term_key":"probability.random_draw","english":"random draw","preferred_ko":"무작위 추출값","display_policy":"ko_en_first"}
+{"term_key":"probability.random_variable","english":"random variable","preferred_ko":"확률변수","display_policy":"ko_en_first"}
+{"term_key":"probability.support","english":"support","display_policy":"english","context_note":"근거를 뒷받침한다는 support와 구분한다."}
+{"term_key":"probability.variance","english":"variance","preferred_ko":"분산","display_policy":"ko_en_first"}
+{"term_key":"programming.recursion","english":"recursive invocation","preferred_ko":"재귀 호출","display_policy":"ko_en_first"}
+{"term_key":"programming.type","english":"type","preferred_ko":"타입","display_policy":"ko_en_first","context_note":"프로그램 표현식과 인수의 허용 값·연산 분류를 뜻한다. 도구 인수의 data type은 같은 객체의 입력 역할이다. 타입 추론·검사 연산 자체나 임의 기능 정확성 보장과 구별한다."}
+{"term_key":"rag.retrieval_augmented_generation","english":"retrieval-augmented generation","preferred_ko":"검색 증강 생성","display_policy":"ko_en_first"}
+{"term_key":"reliability.degraded_operation","english":"degraded operation","preferred_ko":"축소 운영","display_policy":"ko_en_first"}
+{"term_key":"reliability.fault_propagation","english":"fault propagation","preferred_ko":"장애 전파","display_policy":"ko_en_first"}
+{"term_key":"reliability.service_fallback","english":"service fallback","preferred_ko":"서비스 대체 경로","display_policy":"ko_en_first"}
+{"term_key":"reliability.service_redundancy","english":"service redundancy","preferred_ko":"서비스 중복 구성","display_policy":"ko_en_first"}
+{"term_key":"representation.learned_model_representation","english":"model representation","preferred_ko":"모델 표현","display_policy":"ko_en_first","context_note":"모델 내부의 정보 전달·재사용 표현에 적용하며 학습 여부나 신경망 구현을 일괄 가정하지 않는다. neural.representation이 정확히 적용되면 그 canonical 표기를 우선한다. 논리식 변환, 저장 layout, 원시 관측 및 실제 환경·정본 실행 상태와 구별한다."}
+{"term_key":"retrieval.index","english":"retrieval index","preferred_ko":"검색 인덱스","display_policy":"ko_en_first"}
+{"term_key":"retrieval.query","english":"retrieval query","preferred_ko":"검색 질의","display_policy":"ko_en_first"}
+{"term_key":"rl.advantage","english":"advantage","preferred_ko":"강화학습 이점","display_policy":"ko_en_first","context_note":"동일 정책·보상 규약 아래 행동 가치의 대응 상태 가치 대비 초과량 또는 그 추정값에 적용한다. 임의의 baseline 차이와 구별하며 표본 추정값의 부호를 실제 개선 보장으로 읽지 않는다."}
+{"term_key":"rl.bootstrapped_target","english":"bootstrapped RL target","preferred_ko":"부트스트랩 학습 대상값","display_policy":"ko_en_first","context_note":"현재의 이후 가치 추정값을 일부 이용한 강화학습 대상값을 뜻한다. 통계적 재표본추출 bootstrap 및 대상값 계산 모델의 매개변수와 구별한다."}
+{"term_key":"rl.expected_return_value","english":"expected-return value","preferred_ko":"가치","display_policy":"ko_en_first","context_note":"강화학습에서 지정된 정책·확률법칙에 따른 보상 합산값의 기댓값에 적용한다. 상태·행동 조건화와 초기 상태 평균을 유지하며 실현된 보상 합산값·이점과 구별한다. 추정값을 참값으로 간주하지 않는다."}
+{"term_key":"rl.ppo_surrogate","english":"PPO surrogate objective","preferred_ko":"PPO 대리 목적함수","display_policy":"ko_en_first"}
+{"term_key":"rl.return","english":"return","preferred_ko":"보상 합산값","display_policy":"ko_en_first","context_note":"주어진 기간과 가중 규약에 따른 보상 합산값에 적용한다. 프로그램 반환값과 구별하고 완전한 표본 누적 보상을 미래 가치 추정값으로 대체하지 않는다."}
+{"term_key":"rl.reward_discount","english":"reward discount","preferred_ko":"보상 할인","display_policy":"ko_en_first"}
+{"term_key":"safety.capability_behavior_probe","english":"AI safety probe","preferred_ko":"AI 안전성 프로브","display_policy":"ko_en_first"}
+{"term_key":"safety.objective_induced_incentive","english":"objective-induced incentive","preferred_ko":"목표에 따른 행동 유인","display_policy":"ko_en_first"}
+{"term_key":"search.frontier","english":"frontier","preferred_ko":"탐색 대기 집합","display_policy":"ko_en_first"}
+{"term_key":"search.local_search","english":"local search","preferred_ko":"국소 탐색","display_policy":"ko_en_first"}
+{"term_key":"search.remaining_cost_heuristic","english":"heuristic","preferred_ko":"잔여 비용 휴리스틱","display_policy":"ko_en_first"}
+{"term_key":"search.state_space","english":"state space","preferred_ko":"탐색 상태 공간","display_policy":"ko_en_first"}
+{"term_key":"security.content_provenance","english":"content provenance","preferred_ko":"콘텐츠 출처 이력","display_policy":"ko_en_first","context_note":"최초 작성자·유입 경로 등 주어진 이력을 가리킨다. 출처가 있다는 사실이 지시 권위를 부여하지 않는다."}
+{"term_key":"security.credentials","english":"credentials","preferred_ko":"접근 자격 증명","display_policy":"ko_en_first"}
+{"term_key":"security.execution_isolation","english":"execution isolation","preferred_ko":"실행 격리","display_policy":"ko_en_first"}
+{"term_key":"security.general_trust_boundary","english":"security trust boundary","preferred_ko":"보안 신뢰 경계","display_policy":"ko_en_first","context_note":"지시 권위 기준의 지시 신뢰 경계만으로 한정하지 않으며, 개별 자원·데이터 이동의 허가 조건을 자동 보장하지 않는다."}
+{"term_key":"security.instruction_authority","english":"instruction authority","preferred_ko":"지시 권위","display_policy":"ko_en_first","context_note":"명령을 따를 근거가 되는 지위다. 도구 접근 권한이나 출처의 사실 신뢰성과 혼동하지 않는다."}
+{"term_key":"security.instruction_trust_boundary","english":"trust boundary","preferred_ko":"지시 신뢰 경계","display_policy":"ko_en_first","context_note":"정보 출처와 지시 권위를 구별하는 문맥에 적용한다. 네트워크·테넌트 경계만으로 한정하지 않는다."}
+{"term_key":"security.integrity","english":"security integrity","preferred_ko":"보안 무결성","display_policy":"ko_en_first"}
+{"term_key":"security.prompt_injection_attempt","english":"prompt injection","preferred_ko":"프롬프트 주입","display_policy":"ko_en_first","context_note":"개별 주입 시도에 적용한다. K0473 방법 전체에는 Concept label을 적용한다."}
+{"term_key":"security.untrusted_content","english":"untrusted content","preferred_ko":"신뢰되지 않은 콘텐츠","display_policy":"ko_en_first","context_note":"지시 권위 기준의 신뢰 여부이며 모든 내용이 거짓 또는 악성이라는 뜻이 아니다."}
+{"term_key":"software.abstract_transfer_function","english":"abstract transfer function","preferred_ko":"추상 전달 함수","display_policy":"ko_en_first"}
+{"term_key":"software.acceptance_condition","english":"acceptance condition","preferred_ko":"수용 조건","display_policy":"ko_en_first","context_note":"조건과 이를 집행하는 verification gate를 구분한다."}
+{"term_key":"software.component_interface","english":"software component interface","preferred_ko":"소프트웨어 구성요소 인터페이스","display_policy":"ko_en_first"}
+{"term_key":"software.concretization","english":"concretization","preferred_ko":"구체 상태 해석","display_policy":"ko_en_first","context_note":"추상 정보가 나타내는 구체 상태를 주는 사상이며, 구체 실행이나 일반 논리 해석을 뜻하지 않는다."}
+{"term_key":"software.dependency","english":"software dependency","preferred_ko":"소프트웨어 의존 관계","display_policy":"ko_en_first"}
+{"term_key":"software.diff","english":"diff","display_policy":"english","context_note":"리비전 사이의 차이를 표현한 비교 산출물이며, 적용할 편집 집합인 patch와 구별한다."}
+{"term_key":"software.input_boundary","english":"input boundary","display_policy":"english","context_note":"기능 평가의 task-outcome claim과 동일시하지 않는다."}
+{"term_key":"software.partial_correctness","english":"partial correctness","preferred_ko":"부분 정확성","display_policy":"ko_en_first","context_note":"종료하는 실행에 대한 성질이며 종료 자체를 보장하지 않는다. 총 정확성은 별도의 종료 보장까지 요구한다."}
+{"term_key":"software.patch","english":"patch","preferred_ko":"패치","display_policy":"ko_en_first"}
+{"term_key":"software.program_assertion","english":"program-state assertion","preferred_ko":"프로그램 상태 단언","display_policy":"ko_en_first"}
+{"term_key":"software.regression_test","english":"regression test","preferred_ko":"회귀 테스트","display_policy":"ko_en_first","context_note":"기능 평가의 task-outcome claim과 동일시하지 않는다."}
+{"term_key":"software.requirement","english":"requirement","preferred_ko":"요구사항","display_policy":"ko_en_first","context_note":"제약 및 요구사항을 일괄 동의어로 취급하지 않는다. AI의 규범적 내용 판단은 별도다."}
+{"term_key":"software.specification","english":"specification","preferred_ko":"소프트웨어 명세","display_policy":"ko_en_first","context_note":"요구사항 자체와 명시적 표현을 구분한다. 수학적 확률과정 기술에 자동 적용하지 않는다."}
+{"term_key":"software.test_coverage","english":"coverage","preferred_ko":"테스트 커버리지","display_policy":"ko_en_first","context_note":"명시된 테스트 기준과 대상 범위의 문맥을 유지한다. 코드 실행 비율만으로 좁히거나 평가 주장의 포괄성과 동일시하지 않는다."}
+{"term_key":"software.test_oracle","english":"test oracle","display_policy":"english","context_note":"기능 평가의 task-outcome claim과 동일시하지 않는다."}
+{"term_key":"software.validation","english":"validation","preferred_ko":"사용 목적 적합성 확인","display_policy":"ko_en_first","context_note":"논리적 타당성 및 모델 선택의 validation과 구분한다."}
+{"term_key":"software.verification","english":"verification","preferred_ko":"검증","display_policy":"ko_en_first","context_note":"검증만으로 정형 증명이나 전체 정확성 보장을 뜻하지 않는다. validation과 구분한다."}
+{"term_key":"specification.contextual_assumptions","english":"contextual assumptions","preferred_ko":"상황에 관한 가정","display_policy":"ko_en_first","context_note":"사용 상황에 대한 가정에 적용한다. 입력 컨텍스트에 실제 포함되어 있다고 가정하지 않는다."}
+{"term_key":"statistics.confidence_coverage","english":"confidence-set coverage","preferred_ko":"신뢰집합의 포함확률","display_policy":"ko_en_first","context_note":"반복 표본추출의 포함확률을 뜻한다. 명목 포함확률은 지정 수준이며 실제 포함확률과 자동 동일하지 않는다. 관측 후 사후 확률질량과 구별한다."}
+{"term_key":"statistics.confidence_set","english":"confidence set","preferred_ko":"신뢰집합","display_policy":"ko_en_first","context_note":"반복 표본추출의 포함 보장을 가진 집합·절차를 뜻한다. 관측 후 모수 사후 확률로 해석하는 신용집합과 구별한다."}
+{"term_key":"statistics.distribution_mode","english":"distribution mode","preferred_ko":"최빈점","display_policy":"ko_en_first","context_note":"확률질량·밀도의 최댓값 위치에 적용하며 국소·전역 및 동점 규약은 문맥을 따른다. 생성 표본의 누락된 mode는 해당 위치 주변 영역의 과소대표와 구별 없이 정확한 한 점의 부재로 판정하지 않는다."}
+{"term_key":"statistics.estimator_risk","english":"estimator risk","preferred_ko":"추정량의 위험","display_policy":"ko_en_first"}
+{"term_key":"statistics.hypothesis_roles","english":"null and alternative hypotheses","preferred_ko":"귀무가설·대립가설","display_policy":"ko_en_first","context_note":"귀무가설 또는 대립가설만 지칭할 때 해당 구성 표기를 쓴다. 두 검정 역할은 서로 동의어가 아니며 프로그래밍 null과 구별한다."}
+{"term_key":"statistics.likelihood","english":"likelihood","display_policy":"english","context_note":"데이터의 확률과 모수에 대한 우도를 문맥 없이 치환하지 않는다."}
+{"term_key":"statistics.likelihood_score","english":"likelihood score","preferred_ko":"likelihood 스코어","display_policy":"ko_en_first","context_note":"모수에 대한 log-likelihood 미분에 한정한다. 관측값 밀도에 대한 score와 구별하며 score 방정식의 해만으로 likelihood 극댓값을 보장하지 않는다."}
+{"term_key":"statistics.point_estimator","english":"point estimator","preferred_ko":"점추정량","display_policy":"ko_en_first"}
+{"term_key":"statistics.population","english":"statistical population","preferred_ko":"통계적 모집단","display_policy":"ko_en_first"}
+{"term_key":"statistics.sample","english":"statistical sample","preferred_ko":"통계적 표본","display_policy":"ko_en_first"}
+{"term_key":"statistics.sampling_model","english":"sampling model","preferred_ko":"표본추출 모형","display_policy":"ko_en_first"}
+{"term_key":"statistics.standard_error","english":"standard error","preferred_ko":"표준 오차","display_policy":"ko_en_first"}
+{"term_key":"statistics.statistic","english":"statistic","preferred_ko":"통계량","display_policy":"ko_en_first","context_note":"표본·관측자료 요약 규칙과 관측 후 값을 문맥에 따라 구별한다. 모집단 모수나 통계량의 확률법칙 자체를 이 표기로 바꾸지 않는다."}
+{"term_key":"statistics.type_i_error","english":"Type I error","preferred_ko":"제1종 오류","display_policy":"ko_en_first"}
+{"term_key":"stochastic.adaptedness","english":"adaptedness","preferred_ko":"적합성","display_policy":"ko_en_first","context_note":"확률과정과 같은 시점 정보족 사이의 적합성에 한정한다. 모델 적응이나 사용 목적 적합성 확인과 구별한다."}
+{"term_key":"stochastic.filtration","english":"filtration","preferred_ko":"정보 여과","display_policy":"ko_en_first","context_note":"정보를 걸러내는 절차가 아니라 시간별 정보의 포함관계를 표현하는 수학적 객체를 가리킨다."}
+{"term_key":"stochastic.ito_drift","english":"drift coefficient","preferred_ko":"드리프트 계수","display_policy":"ko_en_first"}
+{"term_key":"stochastic.markov_property","english":"Markov property","preferred_ko":"마르코프 성질","display_policy":"ko_en_first"}
+{"term_key":"stochastic.process","english":"stochastic process","preferred_ko":"확률과정","display_policy":"ko_en_first"}
+{"term_key":"stochastic.sample_path","english":"sample path","preferred_ko":"표본경로","display_policy":"ko_en_first"}
+{"term_key":"stochastic.stationarity","english":"stationarity","preferred_ko":"정상성","display_policy":"ko_en_first","context_note":"강한 정상성(strict stationarity)과 약한 정상성(weak stationarity)을 구별한다. 약한 정상성만으로 모든 유한차원 법칙의 불변성을 가정하지 않는다."}
+{"term_key":"systems.blocking","english":"blocking","preferred_ko":"블로킹","display_policy":"ko_en_first"}
+{"term_key":"systems.network_packet","english":"packet","preferred_ko":"패킷","display_policy":"ko_en_first"}
+{"term_key":"systems.process","english":"process","preferred_ko":"프로세스","display_policy":"ko_en_first"}
+{"term_key":"systems.replication","english":"state replication","preferred_ko":"상태 복제","display_policy":"ko_en_first"}
+{"term_key":"systems.synchronization","english":"synchronization","preferred_ko":"동기화","display_policy":"ko_en_first"}
+{"term_key":"systems.transport_layer","english":"transport layer","preferred_ko":"전송 계층","display_policy":"ko_en_first"}
+{"term_key":"topology.closed_set","english":"closed set","preferred_ko":"닫힌집합","display_policy":"ko_en_first"}
+{"term_key":"topology.closure","english":"closure","preferred_ko":"폐포","display_policy":"ko_en_first","context_note":"수학적 집합의 폐포에 적용한다. 선형 생성 자체, 거리공간의 완비화 및 작업 종료 절차와 구별한다."}
+{"term_key":"topology.interior","english":"interior","preferred_ko":"내부","display_policy":"ko_en_first"}
+{"term_key":"topology.metric","english":"metric","preferred_ko":"거리함수","display_policy":"ko_en_first","context_note":"공리를 만족하는 점쌍 거리함수다. 공리 검증 전의 후보 식, 평가 점수 및 접공간에 주어진 리만 계량과 구별한다."}
+{"term_key":"topology.neighborhood","english":"topological neighborhood","preferred_ko":"근방","display_policy":"ko_en_first"}
+{"term_key":"topology.open_cover","english":"open cover","preferred_ko":"열린 덮개","display_policy":"ko_en_first"}
+{"term_key":"topology.open_set","english":"open set","preferred_ko":"열린집합","display_policy":"ko_en_first","context_note":"명시된 위상에서 열린 집합이다. 상대위상과 바탕 공간을 보존하며 비어 있지 않음·유계 여부로 열림을 추론하지 않는다."}
+{"term_key":"topology.topology","english":"topology","preferred_ko":"위상","display_policy":"ko_en_first","context_note":"열린집합족으로 주어지는 수학적 위상 구조다. 네트워크 배치나 상호작용 구조를 이 의미로 취급하지 않는다."}
+{"term_key":"transformer.attention_component","english":"attention","preferred_ko":"어텐션","display_policy":"ko_en_first","context_note":"PILOT012에서 명시된 구성요소 연산에 적용한다. 별도 attention Concept를 직접 지칭할 때 해당 K 표기를 우선한다."}
+{"term_key":"transformer.residual_stream","english":"residual stream","display_policy":"english","context_note":"Transformer 블록 내부의 residual stream에 한정한다. 일반 실행 스트림이나 잔차값 하나로 바꾸지 않는다."}
+{"term_key":"vision.camera_projection","english":"camera projection","preferred_ko":"카메라 투영","display_policy":"ko_en_first"}

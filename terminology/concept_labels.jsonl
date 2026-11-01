@@ -1,0 +1,54 @@
+{"concept_id":"K0008","preferred_ko":"수학적 증명 방법","display_policy":"ko_en_first"}
+{"concept_id":"K0034","preferred_ko":"야코비 행렬","display_policy":"ko_en_first"}
+{"concept_id":"K0054","preferred_ko":"거리공간","display_policy":"ko_en_first"}
+{"concept_id":"K0056","preferred_ko":"콤팩트성","display_policy":"ko_en_first","note":"순차적 판정 및 유클리드 공간의 닫힘·유계성과의 동치는 해당 가정 아래만 사용한다. 거리공간의 완비성과 구별한다."}
+{"concept_id":"K0057","preferred_ko":"거리공간의 완비성","display_policy":"ko_en_first","note":"거리공간 내부로 수렴해야 한다. 실수의 순서 완비성, 콤팩트성 및 정규직교계의 조밀한 생성과 구별한다."}
+{"concept_id":"K0063","preferred_ko":"측도 공간","display_policy":"ko_en_first"}
+{"concept_id":"K0078","preferred_ko":"조건부 분포","display_policy":"ko_en_first","note":"conditional law와 conditional distribution이 이 의미에서 같은 label을 사용한다."}
+{"concept_id":"K0079","preferred_ko":"확률적 독립성","display_policy":"ko_en_first","note":"통계적 독립성은 동일한 확률 분해 성질의 통계 문맥 별칭이다. 쌍별·상호·조건부 및 동일 분포 조건을 유지하며, 0 공분산·선형독립·인과적 무관성과 구별한다."}
+{"concept_id":"K0083","preferred_ko":"확률변수의 수렴 방식","display_policy":"ko_en_first","note":"거의 확실 수렴·확률수렴·분포수렴·Lp 수렴을 서로 바꾸지 않는다. L2 수렴은 Lp의 p=2 한정 표기다."}
+{"concept_id":"K0084","preferred_ko":"대수의 법칙","display_policy":"ko_en_first"}
+{"concept_id":"K0086","preferred_ko":"집중 부등식","display_policy":"ko_en_first","note":"개별 집중 부등식도 이 표기를 사용한다. 이를 도구로 삼아 도출한 모델 클래스의 일반화 상계 및 점근적 정규 근사와 구별하고 적용 가정을 유지한다."}
+{"concept_id":"K0087","preferred_ko":"확률과정의 명세","display_policy":"ko_en_first","note":"한국어 수학 문헌에서 '확률과정'은 안정적으로 쓰이지만 전체 Concept 표기는 프로젝트 편집 번역이다. 소프트웨어 명세나 정형 명세와 동일한 sense로 취급하지 않는다."}
+{"concept_id":"K0090","preferred_ko":"마팅게일","display_policy":"ko_en_first"}
+{"concept_id":"K0091","preferred_ko":"브라운 운동","display_policy":"ko_en_first"}
+{"concept_id":"K0093","preferred_ko":"확률미분방정식","display_policy":"ko_en_first"}
+{"concept_id":"K0101","preferred_ko":"통계적 재표본추출","display_policy":"ko_en_first"}
+{"concept_id":"K0105","display_policy":"english"}
+{"concept_id":"K0107","preferred_ko":"교차 엔트로피","display_policy":"ko_en_first"}
+{"concept_id":"K0108","preferred_ko":"쿨백–라이블러 발산","display_policy":"ko_en_first"}
+{"concept_id":"K0109","preferred_ko":"상호정보량","display_policy":"ko_en_first"}
+{"concept_id":"K0116","preferred_ko":"경사하강법","display_policy":"ko_en_first"}
+{"concept_id":"K0140","preferred_ko":"무작위 알고리즘","display_policy":"ko_en_first"}
+{"concept_id":"K0159","preferred_ko":"소프트웨어 테스트","display_policy":"ko_en_first","note":"기능 평가나 정형 검증을 이 표기로 합치지 않는다."}
+{"concept_id":"K0164","preferred_ko":"정형 프로그램 검증","display_policy":"ko_en_first","note":"모델 검사와 동일시하지 않는다. 프로그램 한정어는 canonical title을 보존한다."}
+{"concept_id":"K0166","preferred_ko":"무정보 상태 공간 탐색","display_policy":"ko_en_first"}
+{"concept_id":"K0177","display_policy":"english","note":"SAT/SMT 모델 탐색 및 인간 주도 대화형 증명과 구분한다."}
+{"concept_id":"K0187","preferred_ko":"베이지안 네트워크","display_policy":"ko_en_first"}
+{"concept_id":"K0198","preferred_ko":"구조적 인과 모델","display_policy":"ko_en_first"}
+{"concept_id":"K0231","preferred_ko":"반지도 학습","display_policy":"ko_en_first"}
+{"concept_id":"K0248","preferred_ko":"역전파","display_policy":"ko_en_first"}
+{"concept_id":"K0309","preferred_ko":"Transformer 블록","display_policy":"ko_en_first"}
+{"concept_id":"K0316","preferred_ko":"자기회귀 언어 모델 학습 목적함수","display_policy":"ko_en_first","note":"전체 Concept를 지칭하는 표기다. 부분 표현인 loss나 prefix–target alignment를 이 긴 표기로 바꾸지 않는다."}
+{"concept_id":"K0320","preferred_ko":"언어 모델 디코딩","display_policy":"ko_en_first","note":"토큰 ID를 문자열로 되돌리는 decode API와 구별한다."}
+{"concept_id":"K0341","preferred_ko":"모달리티 간 표현 정렬","display_policy":"ko_en_first","note":"AI 정렬 문제 및 접두 시퀀스–예측 대상 대응과 구별한다."}
+{"concept_id":"K0362","preferred_ko":"밀집 검색","display_policy":"ko_en_first"}
+{"concept_id":"K0367","preferred_ko":"근거 그라운딩 및 출처 귀속","display_policy":"ko_en_first","note":"근거 연결과 출처 표시를 지칭한다. 원출처 자체가 사실이라는 보증 또는 LO의 Concept 연결을 뜻하지 않는다."}
+{"concept_id":"K0385","preferred_ko":"작업 원장","display_policy":"ko_en_first"}
+{"concept_id":"K0387","preferred_ko":"실행 인계 및 재구성","display_policy":"ko_en_first","note":"대화 라우팅만 뜻하는 핸드오프와 구별하여 재구성까지 포함한 Concept 표기를 쓴다."}
+{"concept_id":"K0390","preferred_ko":"에이전트 제어 루프 및 시스템 경계","display_policy":"ko_en_first","note":"system boundary는 이 Concept 안의 책임 범위를 뜻하며 보안 trust boundary와 구별한다."}
+{"concept_id":"K0391","preferred_ko":"도구 호출 계약","display_policy":"ko_en_first"}
+{"concept_id":"K0419","preferred_ko":"에이전트 하네스 아키텍처","display_policy":"ko_en_first","note":"아키텍처 전체에는 이 Concept 표기를 사용한다. 개별 인스턴스의 이름이나 구성요소 표현을 별도 승인된 Concept 별칭으로 취급하지 않는다."}
+{"concept_id":"K0423","preferred_ko":"하네스 검증 게이트","display_policy":"ko_en_first","note":"운영상 수락 여부를 결정하는 검증 게이트다. 정형 증명이나 측정 타당성을 보장한다는 의미로 쓰지 않는다."}
+{"concept_id":"K0442","preferred_ko":"실행 가능한 기능 평가","display_policy":"ko_en_first","note":"실행 자체나 통과를 타당성 보장으로 읽지 않는다. 소프트웨어 테스트 및 하네스 검증 게이트와 구별한다."}
+{"concept_id":"K0453","preferred_ko":"예측 확률 캘리브레이션","display_policy":"ko_en_first"}
+{"concept_id":"K0462","preferred_ko":"AI 행동 명세","display_policy":"ko_en_first","note":"수학적 계약의 정밀성이 규범적 모호성을 해소했다고 간주하지 않는다."}
+{"concept_id":"K0463","preferred_ko":"AI 정렬 문제 정식화","display_policy":"ko_en_first","note":"AI 정렬이라는 구성어의 학술 용례를 사용하되 전체 Concept 표기는 문제 정식화를 유지한다."}
+{"concept_id":"K0471","preferred_ko":"적대적 입력 회피 공격","display_policy":"ko_en_first"}
+{"concept_id":"K0473","preferred_ko":"프롬프트 주입과 지시 신뢰 경계","display_policy":"ko_en_first","note":"특정 주입 시도에는 구성 용어를 사용한다. 일반 프롬프트 작성이나 모든 무단 도구 동작을 뜻하지 않는다."}
+{"concept_id":"K0481","preferred_ko":"차등 프라이버시","display_policy":"ko_en_first"}
+{"concept_id":"K0488","preferred_ko":"AI 의사결정의 공정성 기준","display_policy":"ko_en_first"}
+{"concept_id":"K0494","preferred_ko":"정형 명세와 소프트웨어 계약","display_policy":"ko_en_first","note":"AI 행동 명세의 모호성이 수학적 표현만으로 해소된다고 암시하지 않는다."}
+{"concept_id":"K0498","preferred_ko":"모델 검사","display_policy":"ko_en_first","note":"검사한 모델과 범위의 결론을 구체 시스템 전체의 정형 검증으로 확대하지 않는다."}
+{"concept_id":"K0500","display_policy":"english","note":"SAT와 SMT의 약어 및 decision procedures를 모두 유지한다; 전체 K label을 SAT/SMT만으로 축약하지 않는다."}
+{"concept_id":"K0502","display_policy":"english","note":"일반적인 문장 수정이나 데이터 정제에 적용하지 않는다."}

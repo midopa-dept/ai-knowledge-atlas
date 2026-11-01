@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="420" viewBox="0 0 1040 420">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#334155"/></marker></defs>
+<rect width="1040" height="420" fill="white"/>
+<g font-family="NanumGothic, sans-serif" fill="#172033" text-anchor="middle">
+<text x="520" y="34" font-size="25">비율은 달라도, 가져오는 내용의 출처는 같다</text>
+<g fill="#f4f7fb" stroke="#65748b" stroke-width="1.5">
+<rect x="20" y="85" width="290" height="96" rx="7"/><rect x="375" y="85" width="290" height="96" rx="7"/><rect x="730" y="85" width="290" height="96" rx="7"/>
+<rect x="255" y="283" width="530" height="89" rx="7" fill="#eef4ed"/>
+</g>
+<g font-size="22"><text x="165" y="115">위치 1 · 민지</text><text x="520" y="115">위치 2 · 책</text><text x="875" y="115">위치 3 · 동생</text>
+<text x="165" y="154">v_1 = [2, 0]</text><text x="520" y="154">v_2 = [0, 4]</text><text x="875" y="154">v_3 = [2, 4]</text></g>
+<g fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"><path d="M165 181 L380 279"/><path d="M520 181 L520 279"/><path d="M875 181 L660 279"/></g>
+<g font-size="21"><text x="220" y="222">×0.2</text><text x="558" y="222">×0.6</text><text x="820" y="222">×0.2</text>
+<text x="520" y="315">한 요청 위치로</text><text x="520" y="352">좌표별로 더하기 → o = [0.8, 3.2]</text></g>
+<text x="520" y="403" font-size="17">교육용으로 정한 비율과 벡터 · 위치 이름은 출처의 표지이며 좌표의 언어적 의미가 아니다</text>
+</g></svg>

@@ -1,0 +1,9 @@
+{
+  "revision": "section-source-v0.1",
+  "sha256": {
+    "learning-source/aggregate.py": "28fa1c0dec72628c08b618e6c20d30d71255e6854c19f24813be07de6490fff9",
+    "learning-source/demo.py": "1815cd950b9b74fe602d982cff495b248d5ef73cbde50b72beddc2e0fd34383a",
+    "learning-source/solution_code.py": "b5c58043bf4c7e51e6acfd50e42bcb34359710c0a26a15fcd988f193207dcc20",
+    "learning-source/verify.py": "0d1d63ce4b3e6181bc06db3454e372f580d8bf9ca36bffba264ce607c2444a17"
+  }
+}

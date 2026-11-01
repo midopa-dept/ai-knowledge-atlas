@@ -1,0 +1,9 @@
+{
+  "revision": "sources-source-v0.1",
+  "sha256": {
+    "learning-source/sources.py": "405100b63ffbe979dae1cb9cb52e807adc2f2bc54c31d63d67d6900703e20485",
+    "learning-source/demo_sources.py": "e72efb06dde01ebaa60113f569fcb292fa291a546ea9a0cd15ce12807c05c006",
+    "learning-source/solution_sources.py": "b98b9f10d320ec8c8534a132afd0c2830d05d66c4c6335a7fc44c18633004fc5",
+    "learning-source/verify_sources.py": "b358a5fbb4c450f83b7c8f29770d0a33ff0f3399fa9031bc9e2198430609ccd9"
+  }
+}

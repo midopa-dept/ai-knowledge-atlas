@@ -1,0 +1,12 @@
+{
+  "revision": "integrated-source-v0.1",
+  "sha256": {
+    "learning-source/integrated_transformer.py": "32785e58938c14f56045b7ac51948cf0ae4d75f29988ead95b3f375a69cedfec",
+    "learning-source/demo_integrated.py": "9f856831324f3d9f5ccca9997e8a3147699b86f45d4a9508a9b1da370bb2e8bc",
+    "learning-source/verify_integrated.py": "3c31a02ce007bbaf0ae4d62fd69f33b458ede5e83c27ef5b09b64979a054c808",
+    "learning-source/flagship_integrated.py": "f39f23e63ac6ba3cb1c64ada9d7f65bad48563c897b60bb9baa994d19a53c85b",
+    "learning-source/compare_integrated.py": "13f0dcb788551ef8a84c87e0d08164d4ddbfae8b6f67e7a70b03ab2b6531bda2",
+    "learning-source/solution_integrated.py": "e78d6afb148944a1de918886a60ffca1689d613cdadfe4b4fcaee55f96036632"
+  },
+  "계약": "CPU float64·패딩 없는 연속 위치·2층2Head Pre-LN·Absolute 위치표·고정 추론 Cache; 별도 Post-LN 손계산/특징Kernel"
+}

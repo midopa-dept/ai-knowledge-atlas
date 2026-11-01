@@ -1,0 +1,6 @@
+[project]
+name = "transformer-full-pilot"
+version = "0.1.0"
+description = "Transformer 전체 파일럿의 CPU 학습·순방향 계산·검산"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==1.26.4", "torch==2.2.2"]

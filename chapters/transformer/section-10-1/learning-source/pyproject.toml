@@ -1,0 +1,9 @@
+[project]
+name = "transformer-detailed-section-pilot"
+version = "0.1.0"
+description = "Transformer 첫 상세 절의 가중 집계와 문제 검산"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==2.2.6"]
+
+[tool.uv]
+package = false

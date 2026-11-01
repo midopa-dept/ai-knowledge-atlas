@@ -1,0 +1,9 @@
+[project]
+name = "transformer-section-series"
+version = "0.1.0"
+description = "Transformer 연속 상세 절의 수치 실습"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==2.2.6"]
+
+[tool.uv]
+package = false

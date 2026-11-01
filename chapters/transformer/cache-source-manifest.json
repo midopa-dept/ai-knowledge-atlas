@@ -1,0 +1,24 @@
+{
+  "revision": "cache-source-v0.1",
+  "sha256": {
+    "learning-source/kv_cache.py": "e40897f2d2ed6b7c35fb43bf54722d4d1a53cab65775515a46c126e2d44c0758",
+    "learning-source/reference_cache.py": "2b552016a17fec0ab6f028b27ad340009b4f07dac371534a40e12181f384c65d",
+    "learning-source/cache_validity.py": "aacd3331727ba74ba4315c9aecc41401b1a7056ce9f34e1e5c0fa1ae63925be8",
+    "learning-source/demo_cache.py": "82d20c74c1ff8e8b712cb8cdf26dab13a10a46743171091de69e50e7df3e832b",
+    "learning-source/solution_cache.py": "0353d3367fbc9a7bf43e299a7ec3feac27f0d1f8bef142343e9994e113f2e2b2",
+    "learning-source/verify_cache.py": "6cc849a9282a4e7007792e7e2f0fc5cd43055dd4570d45b1b60781a65eb30bce"
+  },
+  "인쇄범위": [
+    [
+      "learning-source/kv_cache.py",
+      55,
+      85
+    ],
+    [
+      "learning-source/solution_cache.py",
+      1,
+      19
+    ]
+  ],
+  "계약": "기존 폭2 두 Head 두 Pre-LN 설계 수치 보존. 별도 Readout 추가. 새 통합 폭2/1·값1/2, 순수 RoPE는 비교폭2 별도 모델."
+}
